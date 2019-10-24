@@ -17,9 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from Desk import views
 
+app_name = 'Desk'
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index),
-    path('register/', views.register),
-    path('login/', views.login)
+    path('admin/', admin.site.urls, name='admin'),
+    path('register/', views.register, name='register'),
+    path('login/', views.login, name='login'),
+
+    path('', views.index, name='index'),
+    path('income/', views.income, name='pendapatan'),
+    path('expense/', views.expense, name='pengeluaran'),
+    path('warehouse/', views.index, name='input_barang'),
+    path('claim/', views.index, name='data_piutang'),
 ]
