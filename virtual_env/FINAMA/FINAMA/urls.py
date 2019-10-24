@@ -19,7 +19,7 @@ from Desk import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main/', views.index),
+    path('', views.index),
     path('register/', views.register),
     path('login/', views.login)
 ]
