@@ -24,9 +24,18 @@ urlpatterns = [
     path('register/', views.register, name='register'),
     path('login/', views.login, name='login'),
 
+    # Dashboard
     path('', views.index, name='index'),
+
+    # Pendapatan
     path('income/', views.income, name='pendapatan'),
+
+    # Pengeluaran
     path('expense/', views.expense, name='pengeluaran'),
+
+    # Input Barang
     path('warehouse/', views.index, name='input_barang'),
+
+    # Data Piutang
     path('claim/', views.index, name='data_piutang'),
 ]
