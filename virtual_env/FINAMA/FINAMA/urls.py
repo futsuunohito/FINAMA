@@ -34,8 +34,8 @@ urlpatterns = [
     path('expense/', views.expense, name='pengeluaran'),
 
     # Input Barang
-    path('warehouse/', views.index, name='input_barang'),
+    path('warehouse/', views.warehouse, name='input_barang'),
 
     # Data Piutang
-    path('claim/', views.index, name='data_piutang'),
+    path('claim/', views.claim, name='data_piutang'),
 ]
