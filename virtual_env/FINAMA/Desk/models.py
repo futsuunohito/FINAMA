@@ -42,7 +42,7 @@ class Barang(models.Model):
 # These models below have foreign key(s)
 class Pendapatan(models.Model):
     id_pendapatan = models.IntegerField(primary_key=True)
-    id_barang = models.ForeignKey(Barang, on_delete=CASCADE)
+    id_barang = models.ForeignKey(Barang, on_delete=models.CASCADE)
 
     nama_barang = models.CharField(max_length=20)
     pembeli = models.CharField(max_length=30)
@@ -56,9 +56,9 @@ class Pendapatan(models.Model):
 
 class Profit(models.Model):
     id_profit = models.IntegerField(primary_key=True)
-    id_pengeluaran = models.ForeignKey(Pengeluaran, on_delete=CASCADE)
-    id_pendapatan = models.ForeignKey(Pendapatan, on_delete=CASCADE)
-    id_piutang = models.ForeignKey(Piutang, on_delete=CASCADE)
+    id_pengeluaran = models.ForeignKey(Pengeluaran, on_delete=models.CASCADE)
+    id_pendapatan = models.ForeignKey(Pendapatan, on_delete=models.CASCADE)
+    id_piutang = models.ForeignKey(Piutang, on_delete=models.CASCADE)
 
     pengeluaran_bulanan = models.IntegerField()
     pendapatan_bulanan = models.IntegerField()
