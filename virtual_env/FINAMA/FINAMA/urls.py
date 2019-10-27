@@ -15,27 +15,29 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Desk import views
+
+from Desk.views import views_auth, views_dashboard, views_income
+from Desk.views import views_warehouse, views_expense, views_claim
 
 app_name = 'Desk'
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
-    path('register/', views.register, name='register'),
-    path('login/', views.login, name='login'),
+    path('register/', views_auth.register, name='register'),
+    path('login/', views_auth.login, name='login'),
 
     # Dashboard
-    path('', views.index, name='index'),
+    path('', views_dashboard.index, name='index'),
 
     # Pendapatan
-    path('income/', views.income, name='pendapatan'),
+    path('income/', views_income.income, name='pendapatan'),
 
     # Pengeluaran
-    path('expense/', views.expense, name='pengeluaran'),
+    path('expense/', views_expense.expense, name='pengeluaran'),
 
     # Input Barang
-    path('warehouse/', views.warehouse, name='input_barang'),
+    path('warehouse/', views_warehouse.warehouse, name='input_barang'),
 
     # Data Piutang
-    path('claim/', views.claim, name='data_piutang'),
+    path('claim/', views_claim.claim, name='data_piutang'),
 ]
