@@ -47,7 +47,7 @@ class Pendapatan(models.Model):
     nama_barang = models.CharField(max_length=20)
     pembeli = models.CharField(max_length=30)
     jumlah_pembelian = models.IntegerField()
-    deskripsi_pendapatan = models.IntegerField(max_length=50)
+    deskripsi_pendapatan = models.CharField(max_length=50)
 
     created_at = models.DateTimeField(auto_now=True)
 
