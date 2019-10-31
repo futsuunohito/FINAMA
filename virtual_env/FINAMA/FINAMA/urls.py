@@ -16,8 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Desk.views import views_auth, views_dashboard, views_income
-from Desk.views import views_warehouse, views_expense, views_claim
+from Desk.views import views_auth, views_dashboard, views_income, views_warehouse, views_expense, views_claim
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
