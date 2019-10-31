@@ -5,11 +5,11 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 
-def user_login(request):
-    return render(request, 'login.html')
-
 def user_register(request):
     return render(request, 'register.html')
+
+def user_login(request):
+    return render(request, 'login.html')
 
 @login_required
 def user_logout(request):

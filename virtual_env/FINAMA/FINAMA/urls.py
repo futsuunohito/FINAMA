@@ -19,8 +19,6 @@ from django.urls import path
 from Desk.views import views_auth, views_dashboard, views_income
 from Desk.views import views_warehouse, views_expense, views_claim
 
-app_name = 'Desk'
-
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
     path('register/', views_auth.user_register, name='register'),
