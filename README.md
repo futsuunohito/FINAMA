@@ -5,9 +5,11 @@ The project is created in the virtual_env
 
 <br>
 
-#### Install Mysql Client
+#### Install Mysql Client and Django Widget Tweaks
 
 pip install mysqlclient
+
+pip install django-widget-tweaks
 
 
 
