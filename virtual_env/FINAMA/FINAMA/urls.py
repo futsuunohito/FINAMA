@@ -16,15 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Desk.views import views_auth, views_dashboard, views_income
-from Desk.views import views_warehouse, views_expense, views_claim
-
-app_name = 'Desk'
+from Desk.views import views_auth, views_dashboard, views_income, views_warehouse, views_expense, views_claim
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
-    path('register/', views_auth.register, name='register'),
-    path('login/', views_auth.login, name='login'),
+    path('register/', views_auth.user_register, name='register'),
+    path('login/', views_auth.user_login, name='login'),
+    path('logout/', views_auth.user_logout, name='logout'),
 
     # Dashboard
     path('', views_dashboard.index, name='index'),
