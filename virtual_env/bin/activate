@@ -1,7 +1,7 @@
 # This file must be used with "source bin/activate" *from bash*
 # you cannot run it directly
 
-deactivate () {
+function deactivate () {
     unset -f pydoc >/dev/null 2>&1
 
     # reset old environment variables
@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/jarvis/Documents/code/FINAMA/virtual_env"
+VIRTUAL_ENV="C:/Users/vince/project1/FINAMA/virtual_env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

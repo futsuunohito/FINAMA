@@ -1,0 +1,1000 @@
+  507  g++ 4C.cpp -o q
+  508  ./q
+  509  g++ 4C.cpp -o q
+  510  ./q
+  511  g++ 4C.cpp -o q
+  512  ./q
+  513  g++ 4C.cpp -o q
+  514  ./q
+  515  g++ 4C.cpp -o q
+  516  ./q
+  517  g++ 817C.cpp -o q
+  518  6
+  519  first
+  520  second
+  521  third
+  522  g++ 817C.cpp -o q
+  523  ./q
+  524  g++ 817C.cpp -o q
+  525  ./q
+  526  g++ 817C.cpp -o q
+  527  ./q
+  528  g++ 817C.cpp -o q
+  529  ./q
+  530  g++ 817C.cpp -o q
+  531  ./q
+  532  g++ 817C.cpp -o q
+  533  ./q
+  534  ./
+  535  ./q
+  536  ./
+  537  ./q
+  538  g++ 817C.cpp -o q
+  539  ./q
+  540  g++ 489C.cpp -o q
+  541  ./q
+  542  g++ 489C.cpp -o q
+  543  ./q
+  544  g++ 489C.cpp -o q
+  545  ./q
+  546  g++ 489C.cpp -o q
+  547  ./q
+  548  g++ 489C.cpp -o q
+  549  ./q
+  550  g++ 489C.cpp -o q
+  551  ./q
+  552  g++ 489C.cpp -o q
+  553  ./q
+  554  g++ 489C.cpp -o q
+  555  ./q
+  556  g++ 489C.cpp -o q
+  557  ./q
+  558  g++ 489C.cpp -o q
+  559  ./q
+  560  g++ 489C.cpp -o q
+  561  ./q
+  562  g++ 489C.cpp -o q
+  563  ./q
+  564  g++ 489C.cpp -o q
+  565  ./q
+  566  g++ 489C.cpp -o q
+  567  ./q
+  568  g++ 489C.cpp -o q
+  569  ./q
+  570  g++ 489C.cpp -o q
+  571  ./q
+  572  g++ 489C.cpp -o q
+  573  ./q
+  574  g++ 489C.cpp -o q
+  575  ./q
+  576  g++ 489C.cpp -o q
+  577  ./q
+  578  g++ 489C.cpp -o q
+  579  ./q
+  580  g++ 489C.cpp -o q
+  581  ./q
+  582  g++ 489C.cpp -o q
+  583  ./q
+  584  g++ 489C.cpp -o q
+  585  ./q
+  586  g++ 489C.cpp -o q
+  587  ./q
+  588  g++ 489C.cpp -o q
+  589  ./q
+  590  g++ z.cpp -o q
+  591  ./q
+  592  g++ z.cpp -o q
+  593  ./q
+  594  g++ z.cpp -o q
+  595  ./q
+  596  g++ z.cpp -o q
+  597  ./q
+  598  g++ 489C.cpp -o q
+  599  ./q
+  600  g++ 489C.cpp -o q
+  601  ./q
+  602  g++ 489C.cpp -o q
+  603  ./q
+  604  g++ 489C.cpp -o q
+  605  ./q
+  606  g++ 489C.cpp -o q
+  607  ./q
+  608  g++ 489C.cpp -o q
+  609  ./q
+  610  g++ 489C.cpp -o q
+  611  ./q
+  612  g++ 489C.cpp -o q
+  613  ./q
+  614  g++ 489C.cpp -o q
+  615  ./q
+  616  g++ 489C.cpp -o q
+  617  ./q
+  618  g++ 489C.cpp -o q
+  619  ./q
+  620  g++ 489C.cpp -o q
+  621  ./q
+  622  g++ 489C.cpp -o q
+  623  ./q
+  624  g++ 489C.cpp -o q
+  625  ./q
+  626  g++ 489C.cpp -o q
+  627  ./q
+  628  g++ 489C.cpp -o q
+  629  ./q
+  630  g++ 489C.cpp -o q
+  631  ./q
+  632  g++ 489C.cpp -o q
+  633  ./q
+  634  g++ 489C.cpp -o q
+  635  ./q
+  636  g++ 489C.cpp -o q
+  637  ./q
+  638  g++ 489C.cpp -o q
+  639  ./q
+  640  g++ 489C.cpp -o q
+  641  g++ 550A.cpp -o q
+  642  ./q
+  643  ./
+  644  ./q
+  645  AXBYBXA
+  646  ./q
+  647  AXBYBXA
+  648  g++ 550A.cpp -o q
+  649  ./q
+  650  g++ 550A.cpp -o q
+  651  ./q
+  652  g++ 550A.cpp -o q
+  653  ./q
+  654  g++ 550A.cpp -o q
+  655  ./q
+  656  g++ 550A.cpp -o q
+  657  ./q
+  658  g++ 550A.cpp -o q
+  659  ./q
+  660  g++ 550A.cpp -o q
+  661  ./q
+  662  g++ 550A.cpp -o q
+  663  ./q
+  664  g++ 550A.cpp -o q
+  665  ./q
+  666  g++ 550A.cpp -o q
+  667  ./q
+  668  g++ 148A.cpp -o q
+  669  ./q
+  670  g++ 148A.cpp -o q
+  671  ./q
+  672  g++ 148A.cpp -o q
+  673  ./q
+  674  g++ 148A.cpp -o q
+  675  ./q
+  676  g++ 148A.cpp -o q
+  677  ./q
+  678  g++ 148A.cpp -o q
+  679  ./q
+  680  g++ 208A.cpp -o q
+  681  ./q
+  682  ./Q
+  683  g++ 208A.cpp -o q
+  684  ./Q
+  685  g++ 208A.cpp -o q
+  686  ./q
+  687  g++ 208A.cpp -o q
+  688  ./q
+  689  g++ 208A.cpp -o q
+  690  ./q
+  691  g++ 208A.cpp -o q
+  692  ./q
+  693  g++ 208A.cpp -o q
+  694  ./q
+  695  g++ 208A.cpp -o q
+  696  ./q
+  697  g++ 208A.cpp -o q
+  698  ./q
+  699  g++ 208A.cpp -o q
+  700  ./q
+  701  g++ 208A.cpp -o q
+  702  ./q
+  703  g++ 208A.cpp -o q
+  704  ./q
+  705  g++ 405A.cpp -o q
+  706  ./q
+  707  g++ 405A.cpp -o q
+  708  ./q
+  709  g++ 405A.cpp -o q
+  710  ./q
+  711  g++ 61A.cpp -o q
+  712  ./q
+  713  g++ 469A.cpp -o q
+  714  ./q
+  715  g++ 577A.cpp -o q
+  716  ./q
+  717  g++ 577A.cpp -o q
+  718  ./q
+  719  g++ 577A.cpp -o q
+  720  ./q
+  721  ,.q
+  722  ./q
+  723  g++ 577A.cpp -o q
+  724  ./q
+  725  g++ 577A.cpp -o q
+  726  ./q
+  727  g++ 577A.cpp -o q
+  728  ./q
+  729  g++ 577A.cpp -o q
+  730  ./q
+  731  g++ 577A.cpp -o q
+  732  ./q
+  733  g++ 577A.cpp -o q
+  734  ./q
+  735  g++ 577A.cpp -o q
+  736  ./q
+  737  g++ 577A.cpp -o q
+  738  ./q
+  739  g++ 577A.cpp -o q
+  740  ./q
+  741  g++ 577A.cpp -o q
+  742  ./q
+  743  g++ 577A.cpp -o q
+  744  ./q
+  745  g++ 577A.cpp -o q
+  746  ./q
+  747  g++ 577A.cpp -o q
+  748  ./q
+  749  g++ 577A.cpp -o q
+  750  ./q
+  751  g++ 577A.cpp -o q
+  752  ./q
+  753  g++ 577A.cpp -o q
+  754  ./q
+  755  g++ 144A.cpp -o q
+  756  ./q
+  757  g++ 144A.cpp -o q
+  758  ./q
+  759  g++ 144A.cpp -o q
+  760  ./q
+  761  g++ 144A.cpp -o q
+  762  ./q
+  763  g++ 144A.cpp -o q
+  764  g++ 25A.cpp -o q
+  765  ./q
+  766  g++ 25A.cpp -o q
+  767  ./q
+  768  g++ 25A.cpp -o q
+  769  ./q
+  770  g++ 25A.cpp -o q
+  771  ./q
+  772  g++ 25A.cpp -o q
+  773  ./q
+  774  g++ 25A.cpp -o q
+  775  ./q
+  776  g++ 25A.cpp -o q
+  777  ./q
+  778  g++ 25A.cpp -o q
+  779  ./q
+  780  g++ 25A.cpp -o q
+  781  ./q
+  782  g++ 25A.cpp -o q
+  783  ./q
+  784  g++ 82A.cpp -o q
+  785  ./q
+  786  g++ 82A.cpp -o q
+  787  ./q
+  788  g++ 82A.cpp -o q
+  789  ./q
+  790  g++ 82A.cpp -o q
+  791  ./q
+  792  g++ 82A.cpp -o q
+  793  ./q
+  794  ./q 25
+  795  ./q
+  796  g++ 82A.cpp -o q
+  797  ./q
+  798  g++ 82A.cpp -o q
+  799  ./q
+  800  g++ 82A.cpp -o q
+  801  ./q
+  802  g++ 82A.cpp -o q
+  803  ./q
+  804  g++ 82A.cpp -o q
+  805  ./q
+  806  g++ 82A.cpp -o q
+  807  ./q
+  808  g++ 520A.cpp -o q
+  809  ./q
+  810  g++ 520A.cpp -o q
+  811  ./q
+  812  g++ 228A.cpp -o q
+  813  ./q
+  814  g++ 228A.cpp -o q
+  815  ./q
+  816  g++ 228A.cpp -o q
+  817  ./q
+  818  g++ 228A.cpp -o q
+  819  ./q
+  820  g++ 228A.cpp -o q
+  821  ./q
+  822  g++ 228A.cpp -o q
+  823  ./q
+  824  g++ 228A.cpp -o q
+  825  ./q
+  826  g++ 228A.cpp -o q
+  827  ./q
+  828  g++ 228A.cpp -o q
+  829  ./q
+  830  .q
+  831  3 3 3 3
+  832  ./q
+  833  3 3 3 3
+  834  g++ 228A.cpp -o q
+  835  ./q
+  836  g++ 228A.cpp -o q
+  837  ./q
+  838  g++ 228A.cpp -o q
+  839  ./q
+  840  g++ 228A.cpp -o q
+  841  ./q
+  842  g++ 228A.cpp -o q
+  843  ./q
+  844  g++ 228A.cpp -o q
+  845  ./q
+  846  g++ 228A.cpp -o q
+  847  ./q
+  848  g++ 228A.cpp -o q
+  849  ./q
+  850  g++ 228A.cpp -o q
+  851  ./q
+  852  g++ 228A.cpp -o q
+  853  ./q
+  854  g++ 228A.cpp -o q
+  855  ./q
+  856  g++ 228A.cpp -o q
+  857  ./q
+  858  g++ 228A.cpp -o q
+  859  ./q
+  860  g++ 228A.cpp -o q
+  861  ./q
+  862  g++ 451A.cpp -o q
+  863  /q41
+  864  ./q
+  865  g++ 451A.cpp -o q
+  866  25 70
+  867  ./q
+  868  g++ 451A.cpp -o q
+  869  ./q
+  870  g++ 451A.cpp -o q
+  871  ./q
+  872  g++ 451A.cpp -o q
+  873  ./q
+  874  g++ suvenir.cpp -o q
+  875  ./q
+  876  ./q test.txt
+  877  ./q | test.txt
+  878  g++ suvenir.cpp -o q
+  879  ./q
+  880  g++ suvenir.cpp -o q
+  881  ./q
+  882  g++ suvenir.cpp -o q
+  883  ./q test.txt
+  884  g++ 230A.cpp -o q
+  885  ./q 
+  886  ./q
+  887  g++ 230A.cpp -o q
+  888  ./q
+  889  g++ 230A.cpp -o q
+  890  ./q
+  891  g++ 230A.cpp -o q
+  892  ./q
+  893  g++ 230A.cpp -o q
+  894  ./q
+  895  g++ 339B.cpp -o q
+  896  ./q
+  897  g++ 339B.cpp -o q
+  898  ./q
+  899  g++ 339B.cpp -o q
+  900  ./q
+  901  g++ 339B.cpp -o q
+  902  ./q
+  903  g++ 339B.cpp -o q
+  904  ./q
+  905  g++ 339B.cpp -o q
+  906  ./q
+  907  g++ 339B.cpp -o q
+  908  ./q
+  909  g++ 339B.cpp -o q
+  910  ./q
+  911  g++ 141A.cpp -o q
+  912  ./q
+  913  g++ 141A.cpp -o q
+  914  ./q
+  915  g++ 268A.cpp -o q
+  916  ./q
+  917  g++ 268A.cpp -o q
+  918  ./q
+  919  g++ 268A.cpp -o q
+  920  ./q
+  921  g++ 443A.cpp -o q
+  922  g++ 1234A.cpp -o q
+  923  ./q
+  924  g++ 1234A.cpp -o q
+  925  ./q
+  926  g++ 1234A.cpp -o q
+  927  ./q
+  928  g++ 1234A.cpp -o q
+  929  ./q
+  930  g++ 1234A.cpp -o q
+  931  ./q
+  932  g++ 1234A.cpp -o q
+  933  ./q
+  934  ./q test.txt
+  935  ./q <test.txt> out.txt
+  936  g++ 1234B.cpp -o q
+  937  ./q
+  938  g++ 1234B.cpp -o q
+  939  ./q
+  940  ./q <test.txt> out.txt
+  941  g++ 1234B.cpp -o q
+  942  ./q <test.txt> out.txt
+  943  g++ 1234B.cpp -o q
+  944  ./q <test.txt> out.txt
+  945  g++ 1234A.cpp -o q
+  946  ./q <test.txt> out.txt
+  947  ./q <test.txt
+  948  ./q <test.txt> out.txt
+  949  g++ 1234C.cpp -o q
+  950  ./q <test.txt> out.txt
+  951  ./q
+  952  g++ 1234C.cpp -o q
+  953  ./q <test.txt> out.txt
+  954  g++ 1234C.cpp -o q
+  955  ./q <test.txt> out.txt
+  956  g++ 1234C.cpp -o q
+  957  ./q <test.txt> out.txt
+  958  g++ 1234C.cpp -o q
+  959  ./q <test.txt> out.txt
+  960  g++ 1234C.cpp -o q
+  961  ./q <test.txt> out.txt
+  962  g++ 1234C.cpp -o q
+  963  ./q
+  964  ./q <test.txt> out.txt
+  965  ./q
+  966  g++ 1234C.cpp -o q
+  967  ./q <test.txt> out.txt
+  968  g++ 1234C.cpp -o q
+  969  ./q <test.txt> out.txt
+  970  g++ 1234C.cpp -o q
+  971  ./q <test.txt> out.txt
+  972  g++ 1234C.cpp -o q
+  973  ./q <test.txt> out.txt
+  974  g++ 1234C.cpp -o q
+  975  ./q <test.txt> out.txt
+  976  g++ 1234C.cpp -o q
+  977  ./q <test.txt> out.txt
+  978  g++ ascii.cpp -o q
+  979  ./q <test.txt> ascii.txt
+  980  g++ 1234C.cpp -o q
+  981  ./q <test.txt> out.txt
+  982  g++ 1234C.cpp -o q
+  983  ./q <test.txt> out.txt
+  984  g++ 1234C.cpp -o q
+  985  ./q <test.txt> out.txt
+  986  g++ 1234C.cpp -o q
+  987  ./q <test.txt> out.txt
+  988  g++ 1234C.cpp -o q
+  989  ./q <test.txt> out.txt
+  990  g++ 1234C.cpp -o q
+  991  ./q <test.txt> out.txt
+  992  g++ 1234C.cpp -o q
+  993  g++ 1234C.cpp -o q | ./q <test.txt> out.txt
+  994  g++ 1234C.cpp -o q | ./q <test.txt
+  995  python3
+  996  clear
+  997  g++ 443A.cpp -o q
+  998  ,.q
+  999  ./q
+ 1000  ,.q
+ 1001  g++ 443A.cpp -o q
+ 1002  ./q
+ 1003  g++ 443A.cpp -o q
+ 1004  ./q
+ 1005  g++ 443A.cpp -o q
+ 1006  ./q
+ 1007  g++ 443A.cpp -o q
+ 1008  ./q
+ 1009  g++ 472A.cpp -o q
+ 1010  ./q
+ 1011  g++ 472A.cpp -o q
+ 1012  ./q
+ 1013  g++ 472A.cpp -o q
+ 1014  ./q
+ 1015  g++ 472A.cpp -o q
+ 1016  ./q
+ 1017  g++ 472A.cpp -o q
+ 1018  ./q
+ 1019  g++ 472A.cpp -o q
+ 1020  ./q
+ 1021  g++ 472A.cpp -o q
+ 1022  ./q
+ 1023  g++ 472A.cpp -o q
+ 1024  ./q
+ 1025  g++ 472A.cpp -o q
+ 1026  ./q
+ 1027  g++ 472A.cpp -o q
+ 1028  ./q
+ 1029  g++ 472A.cpp -o q
+ 1030  ./q
+ 1031  g++ 472A.cpp -o q
+ 1032  ./q
+ 1033  g++ 472A.cpp -o q
+ 1034  ./q
+ 1035  g++ 472A.cpp -o q
+ 1036  ./q
+ 1037  g++ 472A.cpp -o q
+ 1038  ./q
+ 1039  g++ 472A.cpp -o q
+ 1040  ./q
+ 1041  g++ 472A.cpp -o q
+ 1042  ./q
+ 1043  g++ 472A.cpp -o q
+ 1044  ./q
+ 1045  g++ 472A.cpp -o q
+ 1046  ./q
+ 1047  g++ 472A.cpp -o q
+ 1048  ./q
+ 1049  g++ 472A.cpp -o q
+ 1050  ./q
+ 1051  g++ 472A.cpp -o q
+ 1052  ./q
+ 1053  g++ 472A.cpp -o q
+ 1054  ./q
+ 1055  g++ 472A.cpp -o q
+ 1056  ./q
+ 1057  g++ 472A.cpp -o q
+ 1058  ./q
+ 1059  g++ 472A.cpp -o q
+ 1060  ./q
+ 1061  g++ 492B.cpp -o q
+ 1062  g++ asdf.cpp -o q
+ 1063  ./q
+ 1064  g++ 1234B.cpp -o q
+ 1065  ./q
+ 1066  g++ 1234B.cpp -o q
+ 1067  g++ 492B.cpp -o q
+ 1068  ./q
+ 1069  g++ 492B.cpp -o q
+ 1070  ./q
+ 1071  g++ 492B.cpp -o q
+ 1072  ./q
+ 1073  g++ 492B.cpp -o q
+ 1074  ./q
+ 1075  g++ 492B.cpp -o q
+ 1076  ./q
+ 1077  g++ 492B.cpp -o q
+ 1078  ./q
+ 1079  g++ 492B.cpp -o q
+ 1080  7 15
+ 1081  15 5 3 7 9 14 0
+ 1082  ./q
+ 1083  15 5 3 7 9 14 0
+ 1084  g++ 492B.cpp -o q
+ 1085  ./q
+ 1086  g++ 492B.cpp -o q
+ 1087  ./q
+ 1088  g++ 492B.cpp -o q
+ 1089  ./q
+ 1090  g++ 492B.cpp -o q
+ 1091  ./q
+ 1092  g++ 492B.cpp -o q
+ 1093  ./q
+ 1094  g++ 492B.cpp -o q
+ 1095  ./q
+ 1096  g++ 492B.cpp -o q
+ 1097  ./q
+ 1098  g++ 492B.cpp -o q
+ 1099  ./q
+ 1100  g++ 492B.cpp -o q
+ 1101  ./q
+ 1102  g++ 492B.cpp -o q
+ 1103  ./q
+ 1104  2 5
+ 1105  ./q
+ 1106  2 5
+ 1107  g++ 492B.cpp -o q
+ 1108  ./q
+ 1109  g++ 492B.cpp -o q
+ 1110  ./q
+ 1111  g++ 492B.cpp -o q
+ 1112  ./q
+ 1113  g++ 492B.cpp -o q
+ 1114  ./q
+ 1115  g++ 492B.cpp -o q
+ 1116  ./q
+ 1117  g++ 492B.cpp -o q
+ 1118  ./q
+ 1119  g++ 510A.cpp -o q
+ 1120  ./q
+ 1121  g++ 510A.cpp -o q
+ 1122  ./q
+ 1123  g++ 510A.cpp -o q
+ 1124  ./q
+ 1125  ./q
+ 1126  g++ 492B.cpp -o q
+ 1127  sudo apt-update
+ 1128  sudo apt update
+ 1129  sudo apt upgrade
+ 1130  g++ 500A.cpp -o q
+ 1131  ./q
+ 1132  g++ 500A.cpp -o q
+ 1133  ./q
+ 1134  g++ 500A.cpp -o q
+ 1135  ./q
+ 1136  g++ 500A.cpp -o q
+ 1137  ./q
+ 1138  g++ 500A.cpp -o q
+ 1139  ./q
+ 1140  g++ 500A.cpp -o q
+ 1141  ./q
+ 1142  g++ 189A.cpp -o q
+ 1143  ./q
+ 1144  g++ 189A.cpp -o q
+ 1145  ./q
+ 1146  g++ 189A.cpp -o q
+ 1147  ./q
+ 1148  g++ 189A.cpp -o q
+ 1149  ./q
+ 1150  g++ 189A.cpp -o q
+ 1151  ./q
+ 1152  g++ 189A.cpp -o q
+ 1153  ./q
+ 1154  g++ 189A.cpp -o q
+ 1155  ./q
+ 1156  g++ 189A.cpp -o q
+ 1157  ./q
+ 1158  g++ 189A.cpp -o q
+ 1159  ./q
+ 1160  g++ 189A.cpp -o q
+ 1161  ./q
+ 1162  python3
+ 1163  g++ 189A.cpp -o q
+ 1164  python3
+ 1165  g++ 189A.cpp -o q
+ 1166  ./q
+ 1167  g++ 189A.cpp -o q
+ 1168  ./q
+ 1169  g++ 189A.cpp -o q
+ 1170  ./q
+ 1171  g++ 189A.cpp -o q
+ 1172  ./q
+ 1173  g++ 460A.cpp -o q
+ 1174  ./q
+ 1175  g++ 460A.cpp -o q
+ 1176  ./q
+ 1177  g++ 460A.cpp -o q
+ 1178  /Q
+ 1179  ./q
+ 1180  /Q
+ 1181  g++ 460A.cpp -o q
+ 1182  ./q
+ 1183  g++ 460A.cpp -o q
+ 1184  ./q
+ 1185  g++ 460A.cpp -o q
+ 1186  ./q
+ 1187  g++ 460A.cpp -o q
+ 1188  g++ 230B.cpp -o q
+ 1189  ./q
+ 1190  g++ 230B.cpp -o q
+ 1191  ./q
+ 1192  g++ 230B.cpp -o q
+ 1193  ./q
+ 1194  g++ 230B.cpp -o q
+ 1195  10
+ 1196  ./q
+ 1197  10
+ 1198  g++ 230B.cpp -o q
+ 1199  ./q
+ 1200  g++ 230B.cpp -o q
+ 1201  ./q
+ 1202  g++ 230B.cpp -o q
+ 1203  ./q
+ 1204  g++ 230B.cpp -o q
+ 1205  ./q
+ 1206  g++ 230B.cpp -o q
+ 1207  ./q
+ 1208  g++ 230B.cpp -o q
+ 1209  ./q
+ 1210  g++ 327A.cpp -o q
+ 1211  ./q
+ 1212  g++ 327A.cpp -o q
+ 1213  ./q
+ 1214  g++ 327A.cpp -o q
+ 1215  ./q
+ 1216  g++ 327A.cpp -o q
+ 1217  ./q
+ 1218  g++ 327A.cpp -o q
+ 1219  ./q
+ 1220  g++ 327A.cpp -o q
+ 1221  ./q
+ 1222  ./
+ 1223  ./q
+ 1224  ./
+ 1225  g++ 327A.cpp -o q
+ 1226  ./q
+ 1227  python3
+ 1228  g++ 327A.cpp -o q
+ 1229  ./q
+ 1230  g++ 327A.cpp -o q
+ 1231  ./q
+ 1232  g++ 327A.cpp -o q
+ 1233  ./q
+ 1234  g++ 327A.cpp -o q
+ 1235  ./q
+ 1236  g++ 327A.cpp -o q
+ 1237  ./q
+ 1238  g++ 327A.cpp -o q
+ 1239  ./q
+ 1240  g++ 327A.cpp -o q
+ 1241  ./q
+ 1242  g++ 327A.cpp -o q
+ 1243  ./q
+ 1244  g++ 327A.cpp -o q
+ 1245  ./q
+ 1246  g++ 327A.cpp -o q
+ 1247  ./q
+ 1248  g++ 327A.cpp -o q
+ 1249  ./q
+ 1250  g++ 327A.cpp -o q
+ 1251  ./q
+ 1252  g++ 327A.cpp -o q
+ 1253  ./q
+ 1254  g++ 327A.cpp -o q
+ 1255  ./q
+ 1256  g++ 327A.cpp -o q
+ 1257  ./q
+ 1258  g++ 327A.cpp -o q
+ 1259  ./q
+ 1260  g++ 327A.cpp -o q
+ 1261  ./q
+ 1262  g++ 327A.cpp -o q
+ 1263  ./q
+ 1264  g++ 327A.cpp -o q
+ 1265  ./q
+ 1266  g++ 327A.cpp -o q
+ 1267  ./q
+ 1268  g++ 327A.cpp -o q
+ 1269  ./q
+ 1270  g++ 327A.cpp -o q
+ 1271  ./q
+ 1272  g++ 327A.cpp -o q
+ 1273  ./q
+ 1274  cd INC/
+ 1275  g++ F.cpp -o q
+ 1276  g++ .cpp -o q
+ 1277  g++ B.cpp -o q
+ 1278  ./q
+ 1279  g++ B.cpp -o q
+ 1280  ./q
+ 1281  g++ B.cpp -o q
+ 1282  ./q
+ 1283  g++ B.cpp -o q
+ 1284  ./q
+ 1285  g++ B.cpp -o q
+ 1286  ./q
+ 1287  g++ B.cpp -o q
+ 1288  ./q
+ 1289  g++ B.cpp -o q
+ 1290  ./q
+ 1291  g++ B.cpp -o q
+ 1292  ./q
+ 1293  g++ B.cpp -o q
+ 1294  ./q
+ 1295  g++ B.cpp -o q
+ 1296  ./q
+ 1297  g++ F.cpp -o q
+ 1298  ./q
+ 1299  g++ F.cpp -o q
+ 1300  ./q
+ 1301  g++ F.cpp -o q
+ 1302  ./q
+ 1303  g++ B.cpp -o q
+ 1304  ./q
+ 1305  g++ B.cpp -o q
+ 1306  ./q <inp.txt
+ 1307  ./q
+ 1308  g++ B.cpp -o q
+ 1309  ./q
+ 1310  g++ B.cpp -o q
+ 1311  ./q
+ 1312  g++ B.cpp -o q
+ 1313  ./q
+ 1314  ./q <inp.txt
+ 1315  g++ B.cpp -o q
+ 1316  ./q <inp.txt
+ 1317  g++ B.cpp -o q
+ 1318  ./q <inp.txt
+ 1319  g++ B.cpp -o q
+ 1320  ./q <inp.txt
+ 1321  g++ B.cpp -o q
+ 1322  ./q <inp.txt
+ 1323  g++ B.cpp -o q
+ 1324  ./q <inp.txt
+ 1325  g++ B.cpp -o q
+ 1326  ./q <inp.txt
+ 1327  g++ B.cpp -o q
+ 1328  ./q <inp.txt
+ 1329  g++ B.cpp -o q
+ 1330  ./q <inp.txt
+ 1331  g++ A.cpp -o q
+ 1332  ./q
+ 1333  g++ A.cpp -o q
+ 1334  ./q
+ 1335  g++ A.cpp -o q
+ 1336  ./q <inp.txt
+ 1337  g++ A.cpp -o q
+ 1338  ./q <inp.txt
+ 1339  cd Penyisihan\ Gemastik\ 2016/
+ 1340  g++ C.cpp -o q
+ 1341  cd Penyisihan\ Gemastik\ 2016/
+ 1342  g++ B.cpp -o q
+ 1343  ./q
+ 1344  g++ 189A.cpp -o q
+ 1345  g++ 379A_460A.cpp -o q
+ 1346  g++ 189A.cpp -o q
+ 1347  ./q
+ 1348  g++ 189A.cpp -o q
+ 1349  ./q
+ 1350  python3
+ 1351  g++ 189A.cpp -o q
+ 1352  ./q
+ 1353  g++ 189A.cpp -o q
+ 1354  ./q
+ 1355  g++ 189A.cpp -o q
+ 1356  ./q
+ 1357  g++ 189A.cpp -o q
+ 1358  ./q
+ 1359  g++ 189A.cpp -o q
+ 1360  ./q
+ 1361  g++ 189A.cpp -o q
+ 1362  ./q
+ 1363  g++ 189A.cpp -o q
+ 1364  ./q
+ 1365  g++ 155A.cpp -o q
+ 1366  5
+ 1367  100 50 200 150 200
+ 1368  ./q
+ 1369  g++ 723A.cpp -o q
+ 1370  ./q
+ 1371  g++ 723A.cpp -o q
+ 1372  ./q
+ 1373  g++ 723A.cpp -o q
+ 1374  ./q
+ 1375  g++ 750A.cpp -o q
+ 1376  ./q
+ 1377  g++ 750A.cpp -o q
+ 1378  ./q
+ 1379  g++ 750A.cpp -o q
+ 1380  ./q
+ 1381  g++ 750A.cpp -o q
+ 1382  ./q
+ 1383  g++ 750A.cpp -o q
+ 1384  ./q
+ 1385  g++ 732A.cpp -o q
+ 1386  ./q
+ 1387  g++ 732A.cpp -o q
+ 1388  ./q
+ 1389  g++ 732A.cpp -o q
+ 1390  ./q
+ 1391  g++ 732A.cpp -o q
+ 1392  ./q
+ 1393  g++ 732A.cpp -o q
+ 1394  ./q
+ 1395  g++ 466A.cpp -o q
+ 1396  ./q
+ 1397  g++ 466A.cpp -o q
+ 1398  ./q
+ 1399  g++ 466A.cpp -o q
+ 1400  ./q
+ 1401  g++ 466A.cpp -o q
+ 1402  ./q
+ 1403  g++ 466A.cpp -o q
+ 1404  ./q
+ 1405  g++ 466A.cpp -o q
+ 1406  ./q
+ 1407  g++ 466A.cpp -o q
+ 1408  ./q
+ 1409  g++ 466A.cpp -o q
+ 1410  ./q
+ 1411  g++ 466A.cpp -o q
+ 1412  ./q
+ 1413  g++ 1249A.cpp -o q
+ 1414  ./q
+ 1415  g++ 1249A.cpp -o q
+ 1416  ./q
+ 1417  g++ 1249A.cpp -o q
+ 1418  ./q
+ 1419  g++ 1249A.cpp -o q
+ 1420  ./q
+ 1421  g++ 1249A.cpp -o q
+ 1422  ./q
+ 1423  g++ 1249A.cpp -o q
+ 1424  ./q
+ 1425  ./q <test.txt >out.txt
+ 1426  ./q
+ 1427  ./q <test.txt >out.txt
+ 1428  g++ 1249A.cpp -o q
+ 1429  ./q <test.txt >out.txt
+ 1430  g++ 1249A.cpp -o q
+ 1431  ./q <test.txt >out.txt
+ 1432  g++ 1249A.cpp -o q
+ 1433  ./q <test.txt >out.txt
+ 1434  ./q
+ 1435  g++ 1249E.cpp -o q
+ 1436  ./q <test.txt >out.txt
+ 1437  g++ 1249E.cpp -o q
+ 1438  ./q <test.txt >out.txt
+ 1439  g++ 1249E.cpp -o q
+ 1440  ./q <test.txt >out.txt
+ 1441  g++ 1249C.cpp -o q
+ 1442  ./q
+ 1443  g++ 1249C.cpp -o q
+ 1444  ./q
+ 1445  ./q <test.txt >out.txt
+ 1446  ./q
+ 1447  g++ 1249C.cpp -o q
+ 1448  ./q <test.txt >out.txt
+ 1449  g++ 1249C.cpp -o q
+ 1450  ./q <test.txt >out.txt
+ 1451  g++ 1249C.cpp -o q
+ 1452  ./q <test.txt >out.txt
+ 1453  g++ 1249C.cpp -o q
+ 1454  ./q <test.txt >out.txt
+ 1455  g++ 1249B.cpp -o q
+ 1456  ./q <test.txt >out.txt
+ 1457  ./q
+ 1458  ./q <test.txt >out.txt
+ 1459  g++ 1249B.cpp -o q
+ 1460  ./q
+ 1461  g++ 1249B.cpp -o q
+ 1462  ./q
+ 1463  g++ 1249B.cpp -o q
+ 1464  ./q
+ 1465  g++ 1249B.cpp -o q
+ 1466  ./q
+ 1467  g++ 1249B.cpp -o q
+ 1468  ./q
+ 1469  g++ 1249B.cpp -o q
+ 1470  ./q
+ 1471  g++ 1249B.cpp -o q
+ 1472  ./q
+ 1473  ./q <test.txt >out.txt
+ 1474  g++ 1249B.cpp -o q
+ 1475  ./q <test.txt >out.txt
+ 1476  g++ 1249B.cpp -o q
+ 1477  ./q <test.txt >out.txt
+ 1478  g++ 1249B.cpp -o q
+ 1479  ./q <test.txt >out.txt
+ 1480  g++ 1249B.cpp -o q
+ 1481  ./q <test.txt >out.txt
+ 1482  g++ 1249B.cpp -o q
+ 1483  ./q <test.txt >out.txt
+ 1484  g++ 1249B.cpp -o q
+ 1485  ./q <test.txt >out.txt
+ 1486  g++ 1249B.cpp -o q
+ 1487  ./q <test.txt >out.txt
+ 1488  g++ 1249B.cpp -o q
+ 1489  ./q <test.txt >out.txt
+ 1490  g++ 1249B.cpp -o q
+ 1491  ./q <test.txt >out.txt
+ 1492  gpg
+ 1493  gpg --gen-key
+ 1494  gpg --list-keys
+ 1495  gpg --list-secret-keys
+ 1496  gpg --export -a TPE27@email.com
+ 1497  g++ 1249B.cpp -o q
+ 1498  ./q <test.txt >out.txt
+ 1499  g++ 1249B.cpp -o q
+ 1500  ./q <test.txt >out.txt
+ 1501  cd FINAMA/
+ 1502  cd virtual_env/
+ 1503  source bin/activate
+ 1504  source --help
+ 1505  source bin/activate
+ 1506  history > hits.txt
