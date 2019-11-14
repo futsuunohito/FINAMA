@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "layout/index.html" %}
+{% block body_block %}
+{% load widget_tweaks %}
+
+{{form}}
+<h2>Tambah Pendapatan</h2>
+<form method="post">
+  {% csrf_token %}
+    
+
+</form>
+
+
+{% endblock %}

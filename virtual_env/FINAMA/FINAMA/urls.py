@@ -21,14 +21,17 @@ from Desk.views import views_auth, views_dashboard, views_income, views_warehous
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
     path('register/', views_auth.user_register, name='register'),
-    path('login/', views_auth.user_login, name='login'),
+    path('', views_auth.user_login, name='login'),
     path('logout/', views_auth.user_logout, name='logout'),
 
     # Dashboard
-    path('', views_dashboard.index, name='index'),
+    path('/dashboard', views_dashboard.index, name='index'),
 
     # Pendapatan
     path('income/', views_income.income, name='pendapatan'),
+    path('income/input', views_income.input, name='input_pendapatan'),
+    path('income/update', views_income.update, name='update_pendapatan'),
+    path('income', views_income.delete, name='delete_pendapatan'),
 
     # Pengeluaran
     path('expense/', views_expense.expense, name='pengeluaran'),
