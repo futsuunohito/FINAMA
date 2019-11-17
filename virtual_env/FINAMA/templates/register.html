@@ -42,22 +42,23 @@
               </div>
             </div>
 
-            <input type="submit" name="" value="Register">
-            <hr>
-            <a href="index.html" class="btn btn-google btn-user btn-block">
+            <input class="btn btn-success btn-user btn-block" type="submit" name="" value="Register">
+            <div class="text-center">
+                <a class="small" href="forgot-password.html">Forgot Password?</a>
+              </div>
+            <!-- <hr> -->
+            <!-- <a href="index.html" class="btn btn-google btn-user btn-block">
               <i class="fab fa-google fa-fw"></i> Register with Google
             </a>
             <a href="index.html" class="btn btn-facebook btn-user btn-block">
               <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-            </a>
+            </a> -->
           </form>
 
           <hr>
           <div class="text-center">
-            <a class="small" href="forgot-password.html">Forgot Password?</a>
-          </div>
-          <div class="text-center">
-            <a class="small" href="{% url 'login' %}">Already have an account? Login!</a>
+            <div>Already have an account?</div>
+            <a class="small" href="{% url 'login' %}">Login to your account</a>
           </div>
         </div>
       </div>
