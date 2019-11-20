@@ -188,7 +188,7 @@ var myLineChart = new Chart(ctx2, {
       titleMarginBottom: 10,
       titleFontColor: '#6e707e',
       titleFontSize: 14,
-      borderColor: '#dddfeb',
+      borderColor: '#dddf eb',
       borderWidth: 1,
       xPadding: 15,
       yPadding: 15,
