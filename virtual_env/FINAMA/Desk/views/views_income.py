@@ -7,7 +7,15 @@ def income(request):
     return render(request, 'pendapatan/pendapatan.html')
 
 def input(request):
-    return render(request, 'pendapatan/input.html')
+    if request.method == 'POST':
+        form = inputForm(request.POST)
+    else :
+        form = inputForm()
+    
+    context = {
+        'form' : form
+    }
+    return render(request, 'pengeluaran/input.html', context)
 
 def update(request):
     return render(request, 'pendapatan/input.html')
