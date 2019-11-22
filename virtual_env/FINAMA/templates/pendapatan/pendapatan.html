@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 {% extends "layout/index.html" %}
 {% block body_block %}
-<!-- Page Heading -->
-<div class="d-sm-flex align-items-center justify-content-between mb-4">
-  <h1 class="h3 mb-0 text-gray-800">Pendapatan</h1>
-</div>
 
-<!-- Content Row -->
-
-<div class="row">
-
-  <!-- Area Chart -->
-  <div class="col-xl-12 col-lg-7">
-      <!-- Card Body -->
-      <div class="">
-        <table id="tabel_pendapatan" class="table table-bordered">
+<div class="card shadow p-1 mb-3 bg-white rounded">
+    <div class="card-body">
+      <div class="card-title d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Pendapatan</h1>
+        <div>
+          <a href="{% url 'input_pendapatan' %}" class="d-none d-sm-inline-block btn btn-primary shadow-sm"><i class="far fa-plus-square fa-sm text-white-50"></i> Input Pendapatan</a>
+          <a href="#" class="d-none d-sm-inline-block btn btn-success shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+        </div>
+      </div>
+      <hr>
+      <table id="tabel_pendapatan" class="table table-bordered">
           <thead>
             <th>Nama Barang</th>
             <th>Nama Pembeli</th>
             <th>Jumlah</th>
             <th>Deskripsi</th>
             <th>Tanggal</th>
+            <th>Action</th>
           </thead>
           <tbody>
             <tr>
@@ -28,13 +27,16 @@
               <td>Orang</td>
               <td>1</td>
               <td>-</td>
-              <td>27-8-2019</td>
+              <td>12 November 2019</td>
+              <td align="center">
+                <a href="#" class="d-none d-sm-inline-block btn btn-success shadow-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fas fa-edit fa-sm text-white fa-fw"></i></a>
+                <a href="#" class="d-none d-sm-inline-block btn btn-danger shadow-sm" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fas fa-times fa-sm text-white fa-fw"></i></a>
+              </td>
             </tr>
           </tbody>
         </table>
-      </div>
     </div>
-</div>
+  </div>
 
 <script type="text/javascript">
 	$(document).ready(function(){

@@ -35,7 +35,7 @@ urlpatterns = [
 
     # Pengeluaran
     path('expense/', views_expense.expense, name='pengeluaran'),
-    path('expense/input', views_expense.input, name='input_pendapatan'),
+    path('expense/input', views_expense.input, name='input_pengeluaran'),
     # path('expense/update', views_expense.update, name='update_pendapatan'),
     # path('expense', views_expense.delete, name='delete_pendapatan'),
 
@@ -47,7 +47,7 @@ urlpatterns = [
 
     # Data Piutang
     path('claim/', views_claim.claim, name='data_piutang'),
-    path('claim/input', views_claim.input, name='input_pendapatan'),
+    path('claim/input', views_claim.input, name='input_piutang'),
     # path('claim/update', views_claim.update, name='update_pendapatan'),
     # path('claim', views_claim.delete, name='delete_pendapatan'),
 ]
