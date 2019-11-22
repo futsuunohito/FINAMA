@@ -7,23 +7,7 @@
 <div class="card shadow-sm p-1 mb-3 bg-white rounded">
   <div class="card-body">
     <div class="card-title"><h2>Tambah Pendapatan</h2></div><hr>
-    <form method="post">
-      {% csrf_token %}
-      {% for field in form.visible_fields %}
-        <div class="form-group">
-          <label for="{{ field.id_for_label }}"><b>{{ field.label }}</b></label>
-          {{ field|add_class:'form-control' }}
-          {% for error in field.errors %}
-            <span class="help-block">{{ error }}</span>
-          {% endfor %}
-        </div>
-      {% endfor %}
-      <div class="form-group">
-        <button type="submit" class="btn btn-success">
-          <span class="glyphicon glyphicon-ok"></span> Save
-        </button>
-      </div>
-    </form>
+    {% include "layout/forms.html"%}
   </div>
 </div>
 
