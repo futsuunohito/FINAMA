@@ -9,6 +9,9 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 
 def user_register(request):
+    if request.user.is_authenticated:
+        return render(request, 'main.html')
+        
     if request.method == "POST":
         regist_form = AccountantForm(request.POST)
 
@@ -27,6 +30,9 @@ def user_register(request):
 
 
 def user_login(request):
+    if request.user.is_authenticated:
+        return render(request, 'main.html')
+        
     if request.method == "POST":
         username = request.POST.get('username')
         password = request.POST.get('password')
