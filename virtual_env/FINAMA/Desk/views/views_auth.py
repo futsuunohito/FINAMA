@@ -2,6 +2,7 @@ from django.shortcuts import render
 from Desk.forms.forms_auth import AccountantForm
 from Desk.views.views_dashboard import index
 
+from django.contrib import messages 
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
@@ -18,12 +19,11 @@ def user_register(request):
 
             return user_login(request)
         else:
-            return HttpResponse("Registration Form Invalid")
+            messages.error(request, "Registration Form Invalid")
 
-    else:
-        regist_form = AccountantForm()
-        return render(request, 'register.html',
-            context={'regist_form':regist_form})
+    regist_form = AccountantForm()
+    return render(request, 'register.html',
+        context={'regist_form':regist_form})
 
 
 def user_login(request):
@@ -38,11 +38,10 @@ def user_login(request):
                 login(request, accountant)
                 return HttpResponseRedirect(reverse('index'))
             else:
-                return HttpResponse('Authentication Error')
+                messages.error(request, 'Authentication Error')
         else:
-            return HttpResponse('Wrong username or password')
-    else:
-        return render(request, 'login.html')
+            messages.error(request, "Wrong Username or Password")
+    return render(request, 'login.html', {'form':AccountantForm()})
 
 
 @login_required

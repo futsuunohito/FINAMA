@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from Desk.forms.forms_income import inputForm
+
 
 # Pendapatan
 @login_required
@@ -15,7 +17,7 @@ def input(request):
     context = {
         'form' : form
     }
-    return render(request, 'pengeluaran/input.html', context)
+    return render(request, 'pendapatan/input.html', context)
 
 def update(request):
     return render(request, 'pendapatan/input.html')

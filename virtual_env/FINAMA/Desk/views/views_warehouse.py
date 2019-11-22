@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from Desk.forms.forms_warehouse import inputForm
+
 
 # Input Barang
 @login_required

@@ -25,7 +25,7 @@ urlpatterns = [
     path('logout/', views_auth.user_logout, name='logout'),
 
     # Dashboard
-    path('/dashboard', views_dashboard.index, name='index'),
+    path('dashboard/', views_dashboard.index, name='index'),
 
     # Pendapatan
     path('income/', views_income.income, name='pendapatan'),
@@ -35,10 +35,19 @@ urlpatterns = [
 
     # Pengeluaran
     path('expense/', views_expense.expense, name='pengeluaran'),
+    path('expense/input', views_expense.input, name='input_pendapatan'),
+    # path('expense/update', views_expense.update, name='update_pendapatan'),
+    # path('expense', views_expense.delete, name='delete_pendapatan'),
 
     # Input Barang
-    path('warehouse/', views_warehouse.warehouse, name='input_barang'),
+    path('warehouse/', views_warehouse.warehouse, name='barang'),
+    path('warehouse/input', views_warehouse.input, name='input_barang'),
+    # path('warehouse/update', views_warehouse.update, name='update_pendapatan'),
+    # path('warehouse', views_warehouse.delete, name='delete_pendapatan'),
 
     # Data Piutang
     path('claim/', views_claim.claim, name='data_piutang'),
+    path('claim/input', views_claim.input, name='input_pendapatan'),
+    # path('claim/update', views_claim.update, name='update_pendapatan'),
+    # path('claim', views_claim.delete, name='delete_pendapatan'),
 ]
