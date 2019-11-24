@@ -10,8 +10,9 @@ class Accountant(models.Model):
 # Non-user models
 class Pengeluaran(models.Model):
     id_pengeluaran = models.AutoField(primary_key=True)
-    id_accountant = models.ForeignKey(Accountant, on_delete=models.CASCADE, default=0)
-    deskripsi_pengeluaran = models.CharField(max_length=50, null=True)
+    id_accountant = models.ForeignKey(User, null=True, blank=True, default=1, on_delete=models.CASCADE)
+
+    deskripsi_pengeluaran = models.CharField(max_length=500, null=True)
     biaya = models.IntegerField()
 
     created_at = models.DateTimeField(auto_now=True)
@@ -21,9 +22,10 @@ class Pengeluaran(models.Model):
 
 class Piutang(models.Model):
     id_piutang = models.AutoField(primary_key=True)
-    id_accountant = models.ForeignKey(Accountant, on_delete=models.CASCADE, default=0)
+    id_accountant = models.ForeignKey(User, null=True, blank=True, default=1, on_delete=models.CASCADE)
+
     asal_piutang = models.CharField(max_length=20)
-    deskripsi_piutang = models.CharField(max_length=50, null=True)
+    deskripsi_piutang = models.CharField(max_length=500, null=True)
     jumlah_piutang = models.IntegerField()
     jatuh_tempo = models.DateTimeField()
 
@@ -34,11 +36,11 @@ class Piutang(models.Model):
 
 class Barang(models.Model):
     id_barang = models.AutoField(primary_key=True)
-    id_accountant = models.ForeignKey(Accountant, on_delete=models.CASCADE, default=0)
+    id_accountant = models.ForeignKey(User, null=True, blank=True, default=1, on_delete=models.CASCADE)
+
     nama_barang = models.CharField(max_length=20)
     distributor = models.CharField(max_length=30)
-    deskripsi_barang = models.CharField(max_length=50)
-
+    deskripsi_barang = models.CharField(max_length=500) # plis tambahin, masa deskripsi cuma gocap :'v
     jumlah_barang = models.IntegerField()
     satuan = models.CharField(max_length=8)
     harga_beli = models.IntegerField()
@@ -54,12 +56,13 @@ class Barang(models.Model):
 class Pendapatan(models.Model):
     id_pendapatan = models.AutoField(primary_key=True)
     id_barang = models.ForeignKey(Barang, on_delete=models.CASCADE)
-    id_accountant = models.ForeignKey(Accountant, on_delete=models.CASCADE, default=0)
+    id_accountant = models.ForeignKey(User, null=True, blank=True, default=1, on_delete=models.CASCADE)
+
 
     nama_barang = models.CharField(max_length=20)
-    pembeli = models.CharField(max_length=30)
+    nama_pembeli = models.CharField(max_length=30)
     jumlah_pembelian = models.IntegerField()
-    deskripsi_pendapatan = models.CharField(max_length=50)
+    deskripsi_pendapatan = models.CharField(max_length=500)
 
     created_at = models.DateTimeField(auto_now=True)
 
@@ -71,7 +74,8 @@ class Profit(models.Model):
     id_pengeluaran = models.ForeignKey(Pengeluaran, on_delete=models.CASCADE)
     id_pendapatan = models.ForeignKey(Pendapatan, on_delete=models.CASCADE)
     id_piutang = models.ForeignKey(Piutang, on_delete=models.CASCADE)
-    id_accountant = models.ForeignKey(Accountant, on_delete=models.CASCADE, default=0)
+    id_accountant = models.ForeignKey(User, null=True, blank=True, default=1, on_delete=models.CASCADE)
+
 
     pengeluaran_bulanan = models.IntegerField()
     pendapatan_bulanan = models.IntegerField()

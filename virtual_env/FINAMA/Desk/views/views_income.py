@@ -11,6 +11,13 @@ def income(request):
 def input(request):
     if request.method == 'POST':
         form = inputForm(request.POST)
+
+        if form.is_valid():
+            form.save(commit=True)
+            return index(request)
+        else :
+            print("Invalid Form of Form")
+
     else :
         form = inputForm()
     

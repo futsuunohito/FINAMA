@@ -11,6 +11,17 @@ def warehouse(request):
 def input(request):
     if request.method == 'POST':
         form = inputForm(request.POST)
+        
+        
+        if form.is_valid():
+            data = form.save(commit=False)
+            data.id_accountant = request.user
+            # print("Your form has successfull submitted by ", form.id_accountant)
+            data.save()
+            warehouse(request)
+            
+        else :
+            print(form.error)
     else :
         form = inputForm()
     
