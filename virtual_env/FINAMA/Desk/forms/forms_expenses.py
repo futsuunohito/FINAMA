@@ -1,9 +1,16 @@
-from django import forms
+from django.forms import ModelForm, Textarea
 from django.contrib.auth.models import User
 from Desk.models import Pengeluaran
 
-class inputForm (forms.Form):
-    deskripsi_pengeluaran   = forms.CharField(label = "Deskripsi", widget = forms.Textarea, help_text = "pengeluaran apa yang dikeluarkan?")
-    biaya                   = forms.DecimalField(label = "Jumlah Pembelian",help_text = "Rp.69420")
-    # nama_barang.render('nama_barang', 'Kacang Atom')
+class inputForm (ModelForm):
     
+    class Meta:
+        model = Pengeluaran
+        fields = ('biaya', 'deskripsi_pengeluaran', )
+        labels = {'deskripsi_pengeluaran':"Deskripsi Pengeluaran",}
+        help_texts = {
+            'biaya' : 45000
+        }
+        widgets = {
+            'deskripsi_pengeluaran'  : Textarea(attrs={'cols': 80, 'rows': 10}),
+        }

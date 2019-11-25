@@ -1,8 +1,8 @@
-from django import forms
+from django.forms import ModelForm, Textarea
 from django.contrib.auth.models import User
 from Desk.models import Pendapatan
 
-class inputForm (forms.ModelForm):
+class inputForm (ModelForm):
 
     class Meta:
         model = Pendapatan
@@ -12,3 +12,6 @@ class inputForm (forms.ModelForm):
             'nama_pembeli':"Bambang Pabambang", 
             'jumlah_pembelian':69420, 
             'deskripsi_pendapatan': "Such a weird order he got there",}
+        widgets = {
+            'deskripsi_pendapatan'  : Textarea(attrs={'cols': 80, 'rows': 10}),
+        }

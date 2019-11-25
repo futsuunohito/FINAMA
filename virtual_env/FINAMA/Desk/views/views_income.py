@@ -13,8 +13,9 @@ def input(request):
         form = inputForm(request.POST)
 
         if form.is_valid():
-            form.save(commit=True)
-            return index(request)
+            data = form.save(commit=False)
+            data.id_accountant = request.user
+            data.save()
         else :
             print("Invalid Form of Form")
 

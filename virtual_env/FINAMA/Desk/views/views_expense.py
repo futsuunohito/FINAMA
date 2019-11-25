@@ -11,6 +11,14 @@ def expense(request):
 def input(request):
     if request.method == 'POST':
         form = inputForm(request.POST)
+
+        if form.is_valid():
+            data = form.save(commit=False)
+            data.id_accountant = request.user
+            data.save()
+        else :
+            print("Invalid Form of Form")
+            
     else :
         form = inputForm()
     
