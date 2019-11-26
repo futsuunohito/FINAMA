@@ -8,6 +8,11 @@
   <div class="card-body">
     <div class="card-title"><h2>Tambah Pendapatan</h2></div><hr>
     {% include "layout/forms.html"%}
+    <select name="item_id">
+    {% for entry in items %}
+      <option value="{{ entry.id }}">{{ entry.name }}</option>
+    {% endfor %}
+    </select>
   </div>
 </div>
 

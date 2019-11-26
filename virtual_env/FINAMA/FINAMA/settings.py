@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Desk',
     'widget_tweaks',
-    'tempus_dominus', #for datepicker
+    'bootstrap_typeahead ', #Autocomplete for barang in Income
 ]
 
 MIDDLEWARE = [
