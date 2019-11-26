@@ -129,3 +129,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
+
+#End session when browser is closed
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
