@@ -19,17 +19,22 @@
           <th>Action</th>
         </thead>
         <tbody>
+        {% for item in piutang %}
           <tr>
-            <td>Retail Alfamart</td>
-            <td>Pembelian sirup 1 kardus</td>
-            <td>Rp 700000</td>
-            <td>11-11-2019</td>
-            <td>09-11-2019</td>
-            <td align="center">
+            <td>{{item.asal_piutang}}</td>
+            <td>{{item.deskripsi_piutang}}</td>
+            {% load humanize %} {% load i18n %} {% load l10n %}
+            {% language 'de' %}
+            <td>Rp{{item.jumlah_piutang|intcomma}}</td>
+            {% endlanguage %}
+            <td>{{item.jatuh_tempo|date:"d F Y"}}</td>
+            <td>{{item.created_at|date:"d-m-Y, H:i:s"}}</td>
+            <td align="center" style="min-width:150px">
               <a href="#" class="d-none d-sm-inline-block btn btn-success shadow-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fas fa-edit fa-sm text-white fa-fw"></i></a>
               <a href="#" class="d-none d-sm-inline-block btn btn-danger shadow-sm" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fas fa-times fa-sm text-white fa-fw"></i></a>
             </td>
           </tr>
+        {% endfor %}
         </tbody>
       </table>
     </div>

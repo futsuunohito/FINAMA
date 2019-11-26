@@ -11,8 +11,8 @@
       <hr>
       <table id="tabel_barang" class="table table-bordered">
           <thead>
-            <th>Nama Barang</th>
-            <th>Jumlah Barang</th>
+            <th>Nama</th>
+            <th>Jumlah</th>
             <th>Harga Beli</th>
             <th>Harga Jual</th>
             <th>Distributor</th>
@@ -21,19 +21,24 @@
             <th>Action</th>
           </thead>
           <tbody>
+          {% for item in barang %}
             <tr>
-              <td>Sirup</td>
-              <td>50 botol</td>
-              <td>Rp 1550000</td>
-              <td>Rp 12000</td>
-              <td>PT ABG</td>
-              <td>Sirup rasa sianida</td>
-              <td>06-06-2019</td>
-              <td align="center">
+              <td>{{item.nama_barang}}</td>
+              <td>{{item.jumlah_barang}}</td>
+              {% load humanize %} {% load i18n %} {% load l10n %}
+              {% language 'de' %}
+              <td>Rp{{ item.harga_beli|intcomma }}</td>
+              <td>Rp{{ item.harga_jual|intcomma }}</td>
+              {% endlanguage %}
+              <td>{{item.distributor}}</td>
+              <td>{{item.deskripsi_barang}}</td>
+              <td>{{item.created_at|date:"d-m-Y, H:i:s"}}</td>
+              <td align="center" style="min-width:150px">
                 <a href="#" class="d-none d-sm-inline-block btn btn-success shadow-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fas fa-edit fa-sm text-white fa-fw"></i></a>
                 <a href="#" class="d-none d-sm-inline-block btn btn-danger shadow-sm" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fas fa-times fa-sm text-white fa-fw"></i></a>
               </td>
             </tr>
+          {% endfor %}
           </tbody>
         </table>
     </div>

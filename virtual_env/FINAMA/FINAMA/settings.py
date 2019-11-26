@@ -41,7 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Desk',
     'widget_tweaks',
+<<<<<<< HEAD
     'bootstrap_typeahead ', #Autocomplete for barang in Income
+=======
+    "django.contrib.humanize"
+>>>>>>> 9a22ecb8a1dfd2ea6f8484d9c6022d9cab8c77e1
 ]
 
 MIDDLEWARE = [
@@ -114,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Bangkok'
 
 USE_I18N = True
 
