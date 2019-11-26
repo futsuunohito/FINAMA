@@ -14,10 +14,14 @@ def income(request):
     return render(request, 'pendapatan/pendapatan.html', context)
 
 def input(request):
+    barang = Barang.objects.all()
+    nama_barang_list = json.dumps([i.nama_barang for i in barang]) 
+
     if request.method == 'POST':
         form = inputForm(request.POST)
 
         if form.is_valid():
+            print(form)
             data = form.save(commit=False)
             data.id_accountant = request.user
             data.save()
@@ -27,7 +31,6 @@ def input(request):
     else :
         form = inputForm()
 
-    nama_barang_list = json.dumps([i.nama_barang for i in Barang.objects.all()]) 
     context = {
         'form' : form,
         'nama_barang_list': nama_barang_list
