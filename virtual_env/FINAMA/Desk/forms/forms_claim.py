@@ -1,11 +1,21 @@
-from django import forms
+from django.forms import ModelForm, Textarea, DateInput
 from django.contrib.auth.models import User
+# from tempus_dominus.widgets import DatePicker
 from Desk.models import Piutang
 
 
-class inputForm (forms.Form):
-    asal_piutang = forms.CharField(label = "Asal", help_text="PT. Suka Ngutang")
-    deskripsi_piutang = forms.CharField(widget=forms.Textarea, label="Deskripsi", 
-                                        help_text="Katanya buat modal jualan cilor")
-    jumlah_piutang = forms.DecimalField(label="Jumlah Piutang", help_text="Rp112.358.132,1")
-    jatuh_tempo = forms.DateTimeField(widget=forms.SelectDateWidget, label="Jatuh Tempo")
+class inputForm (ModelForm):
+
+    class Meta:
+        model = Piutang
+        fields = ('asal_piutang', 'jumlah_piutang', 'jatuh_tempo', 'deskripsi_piutang')
+        labels = {'asal_piutang' : 'Asal Piutang', 'deskripsi_piutang':'Deskripsi Piutang',
+                 'jumlah_piutang':'Jumlah Piutang', 'jatuh_tempo':'Jatuh Tempo'}
+        help_texts = {
+            'asal_piutang'      : 'Pt. Suka Hutang',
+            'jumlah_piutang'    : 45000, 
+        }
+        widgets = {
+            'deskripsi_piutang' : Textarea(attrs={'cols': 80, 'rows': 10}),
+            'jatuh_tempo'       : DateInput(attrs={'type':'date'}),
+        }

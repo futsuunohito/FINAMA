@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Desk',
     'widget_tweaks',
+    'tempus_dominus', #for datepicker
 ]
 
 MIDDLEWARE = [
