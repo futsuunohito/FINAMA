@@ -1,5 +1,6 @@
 from django.forms import ModelForm, Textarea, DateInput
 from django.contrib.auth.models import User
+# from tempus_dominus.widgets import DatePicker
 from Desk.models import Piutang
 
 
@@ -16,7 +17,5 @@ class inputForm (ModelForm):
         }
         widgets = {
             'deskripsi_piutang' : Textarea(attrs={'cols': 80, 'rows': 10}),
-            'jatuh_tempo'       : DateInput(attrs={
-                'class': 'form-control datepicker-input', 'data-target':'#datepicker'
-                }),
+            'jatuh_tempo'       : DateInput(attrs={'type':'date'}),
         }
