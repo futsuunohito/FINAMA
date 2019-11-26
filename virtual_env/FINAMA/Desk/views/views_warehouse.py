@@ -41,5 +41,6 @@ def input(request):
 def update(request):
     return render(request, 'input_barang/input.html')
 
-def delete(request):
-    return render(request, 'input_barang/pendapatan.html')
+def delete(request, id):
+    Barang.objects.get(id = id).delete()
+    return redirect("barang")
