@@ -30,8 +30,8 @@
             <td>{{item.jatuh_tempo|date:"d F Y"}}</td>
             <td>{{item.created_at|date:"d-m-Y, H:i:s"}}</td>
             <td align="center" style="min-width:150px">
-              <a href="#" class="d-none d-sm-inline-block btn btn-success shadow-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fas fa-edit fa-sm text-white fa-fw"></i></a>
-              <a class="d-none d-sm-inline-block btn btn-danger shadow-sm" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-times fa-sm text-white fa-fw"></i></a>
+              <a href="{% url "update_piutang" id=item.id_piutang %}" class="d-none d-sm-inline-block btn btn-success shadow-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fas fa-edit fa-sm text-white fa-fw"></i></a>
+              <a href="{% url "delete_piutang" id=item.id_piutang %}" class="d-none d-sm-inline-block btn btn-danger shadow-sm" data-toggle="modal" data-target="#deleteModal"><i class="fas fa-times fa-sm text-white fa-fw"></i></a>
             </td>
           </tr>
           <!-- Delete Modal -->

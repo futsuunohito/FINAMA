@@ -33,8 +33,17 @@ def input(request):
     }
     return render(request, 'piutang/input.html', context)
 
-def update(request):
-    return render(request, 'piutang/input.html')
+def update(request, id):
+    piutang = Piutang.objects.get(id_piutang = id)
+    form = inputForm(request.POST or None, instance=piutang)
+    if form.is_valid():
+        form.save()
+        messages.success(request, 'Data piutang berhasil disunting')
+        return redirect("piutang")
+    context = {
+        'form'  : form
+    }
+    return render(request, 'piutang/input.html', context)
 
 def delete(request, id):
     Piutang.objects.get(id_piutang = id).delete()

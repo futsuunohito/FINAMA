@@ -35,8 +35,18 @@ def input(request):
     }
     return render(request, 'pengeluaran/input.html', context)
 
-def update(request):
-    return render(request, 'pengeluaran/input.html')
+def update(request, id):
+    pengeluaran = Pengeluaran.objects.get(id_pengeluaran = id)
+    form = inputForm(request.POST or None, instance=pengeluaran)
+    if form.is_valid():
+        form.save()
+        messages.success(request, 'Data pengeluaran berhasil disunting')
+        return redirect("pengeluaran")
+
+    context ={
+        'form'  : form 
+    }
+    return render(request, 'pengeluaran/input.html', context)
 
 def delete(request,id):
     Pengeluaran.objects.get(id_pengeluaran = id).delete()
