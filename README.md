@@ -11,6 +11,8 @@ pip install mysqlclient
 
 pip install django-widget-tweaks
 
+pip install django-typeahead
+
 
 
 #### Activating Virtual Env
