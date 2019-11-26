@@ -10,7 +10,7 @@
     {% for field in form.visible_fields %}
     <div class="form-group">
         <div class="form-group">
-        <label for="{{ field.id_for_label }}"><b>{{ field.label }}</b></label>
+        <label for="{{ field.id_for_label }}" style="display:inline-block"><b>{{ field.label }}</b></label>
         {% comment %} {{ field|add_class:'form-control' }} {% endcomment %}
         {% render_field field class="form-control" placeholder=field.help_text%}
         {% for error in field.errors %}

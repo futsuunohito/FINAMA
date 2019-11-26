@@ -39,13 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'Desk',
     'widget_tweaks',
-<<<<<<< HEAD
-    'bootstrap_typeahead ', #Autocomplete for barang in Income
-=======
-    "django.contrib.humanize"
->>>>>>> 9a22ecb8a1dfd2ea6f8484d9c6022d9cab8c77e1
+    'django_typeahead', #Autocomplete for barang in Income
 ]
 
 MIDDLEWARE = [
