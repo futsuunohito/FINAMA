@@ -5,11 +5,13 @@ The project is created in the virtual_env
 
 <br>
 
-#### Install Mysql Client and Django Widget Tweaks
+#### Install Dependencies
 
 pip install mysqlclient
 
 pip install django-widget-tweaks
+
+pip install django-typeahead
 
 
 
