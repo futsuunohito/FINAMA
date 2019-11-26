@@ -12,8 +12,12 @@
   <title>FINAMA</title>
 
   <!-- jQuery CDN -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
+
+  <!-- Tempus Dominus CDN // for datepicker-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
 
   <!-- DataTables-->
   <link href="{% static "datatables/DataTables/css/jquery.dataTables.min.css" %}" rel="stylesheet">
@@ -312,6 +316,12 @@
       $('li.active').removeClass('active');
       $('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
     });
+  </script>
+
+  <script> //DatePicker for Piutang
+  $(function() {
+    $("#datetimepicker1").datetimepicker();
+  });
   </script>
 </body>
 
