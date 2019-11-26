@@ -7,11 +7,11 @@ from Desk.models import Barang
 # Input Barang
 @login_required
 def warehouse(request):
-    barang = Barang.objects.all()
+    barang = Barang.objects.all().order_by("-created_at")
     context = {
         'barang' : barang
     }
-    return render(request, 'input_barang/input_barang.html', context)
+    return render(request, 'barang/barang.html', context)
 
 def input(request):
     if request.method == 'POST':
@@ -27,7 +27,7 @@ def input(request):
             messages.success(request, 'Data barang berhasil dimasukan')
         else :
             messages.warning(request, 'Data barang gagal dimasukan')
-            return render(request, 'input_barang/input.html')
+            return render(request, 'barang/input.html')
         return redirect("barang")
     else :
         form = inputForm()
@@ -35,12 +35,12 @@ def input(request):
     context = {
         'form' : form
     }
-    return render(request, 'input_barang/input.html', context)
-
+    return render(request, 'barang/input.html', context)
 
 def update(request):
-    return render(request, 'input_barang/input.html')
+    return render(request, 'barang/input.html')
 
 def delete(request, id):
-    Barang.objects.get(id = id).delete()
+    Barang.objects.get(id_barang = id).delete()
+    messages.success(request, 'Data barang berhasil dihapus')
     return redirect("barang")

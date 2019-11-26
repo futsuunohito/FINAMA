@@ -7,7 +7,7 @@ from Desk.models import Pengeluaran
 # Pengeluaran
 @login_required
 def expense(request):
-    pengeluaran  = Pengeluaran.objects.all()
+    pengeluaran  = Pengeluaran.objects.all().order_by("-created_at")
     context = {
         "pengeluaran" : pengeluaran
     }
@@ -38,5 +38,7 @@ def input(request):
 def update(request):
     return render(request, 'pengeluaran/input.html')
 
-def delete(request):
-    return render(request, 'pengeluaran/pengeluaran.html')
+def delete(request,id):
+    Pengeluaran.objects.get(id_pengeluaran = id).delete()
+    messages.success(request, 'Data pengeluaran berhasil dihapus')
+    return redirect("pengeluaran")

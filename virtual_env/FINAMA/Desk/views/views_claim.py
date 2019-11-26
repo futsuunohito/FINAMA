@@ -7,11 +7,11 @@ from Desk.models import Piutang
 # Data piutang
 @login_required
 def claim(request):
-    piutang = Piutang.objects.all()
+    piutang = Piutang.objects.all().order_by("-created_at")
     context = {
         'piutang' : piutang
     }
-    return render(request, 'data_piutang/data_piutang.html', context)
+    return render(request, 'piutang/piutang.html', context)
 
 def input(request):
     if request.method == 'POST':
@@ -23,18 +23,20 @@ def input(request):
             messages.success(request, 'Data piutang berhasil dimasukan')
         else :
             messages.warning(request, 'Data piutang gagal dimasukan')
-            return render(request, 'data_piutang/input.html')
-        return redirect("data_piutang")
+            return render(request, 'piutang/input.html')
+        return redirect("piutang")
     else :
         form = inputForm()
     
     context = {
         'form' : form
     }
-    return render(request, 'data_piutang/input.html', context)
+    return render(request, 'piutang/input.html', context)
 
 def update(request):
-    return render(request, 'data_piutang/input.html')
+    return render(request, 'piutang/input.html')
 
-def delete(request):
-    return render(request, 'data_piutang/data_piutang.html')
+def delete(request, id):
+    Piutang.objects.get(id_piutang = id).delete()
+    messages.success(request, 'Data piutang berhasil dihapus')
+    return redirect("piutang")

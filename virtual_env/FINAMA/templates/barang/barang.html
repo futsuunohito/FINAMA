@@ -6,7 +6,7 @@
     <div class="card-body">
       <div class="card-title d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Barang</h1>
-        <a href="{% url 'input_barang' %}" class="d-none d-sm-inline-block btn btn-primary shadow-sm"><i class="far fa-plus-square fa-sm text-white-50"></i> Input Barang</a>
+        <a href="{% url 'barang' %}" class="d-none d-sm-inline-block btn btn-primary shadow-sm"><i class="far fa-plus-square fa-sm text-white-50"></i> Input Barang</a>
       </div>
       <hr>
       <table id="tabel_barang" class="table table-bordered">
@@ -35,12 +35,13 @@
               <td>{{item.created_at|date:"d-m-Y, H:i:s"}}</td>
               <td align="center" style="min-width:150px">
                 <a href="#" class="d-none d-sm-inline-block btn btn-success shadow-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fas fa-edit fa-sm text-white fa-fw"></i></a>
-                <a href="{% url "delete_barang"% id = item.id_barang}" class="d-none d-sm-inline-block btn btn-danger shadow-sm" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fas fa-times fa-sm text-white fa-fw"></i></a>
+                <a href="{% url "delete_barang" id=item.id_barang %}" class="d-none d-sm-inline-block btn btn-danger shadow-sm" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fas fa-times fa-sm text-white fa-fw"></i></a>
               </td>
             </tr>
           {% endfor %}
           </tbody>
         </table>
+        
     </div>
   </div>
 
