@@ -18,11 +18,11 @@ class Migration(migrations.Migration):
             name='Barang',
             fields=[
                 ('id_barang', models.AutoField(primary_key=True, serialize=False)),
-                ('nama_barang', models.CharField(max_length=20)),
+                ('nama_barang', models.CharField(max_length=30)),
                 ('distributor', models.CharField(max_length=30)),
                 ('deskripsi_barang', models.CharField(max_length=500)),
                 ('jumlah_barang', models.IntegerField()),
-                ('satuan', models.CharField(max_length=8)),
+                ('satuan', models.CharField(max_length=10)),
                 ('harga_beli', models.IntegerField()),
                 ('harga_jual', models.IntegerField()),
                 ('created_at', models.DateTimeField(auto_now=True)),
@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
             name='Pendapatan',
             fields=[
                 ('id_pendapatan', models.AutoField(primary_key=True, serialize=False)),
-                ('nama_barang', models.CharField(max_length=20)),
+                ('nama_barang', models.CharField(max_length=30)),
                 ('nama_pembeli', models.CharField(max_length=30)),
                 ('jumlah_pembelian', models.IntegerField()),
                 ('deskripsi_pendapatan', models.CharField(max_length=500)),
