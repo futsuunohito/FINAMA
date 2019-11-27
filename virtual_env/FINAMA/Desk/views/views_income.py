@@ -37,7 +37,7 @@ def input(request):
                 return redirect("input_pendapatan")
             else:
                 data.id_barang = barang_sel
-                data.total_pendapatan = data.jumlah_pembelian * newBarang.harga_jual
+                data.total_pendapatan = data.jumlah_pembelian * (newBarang.harga_jual - newBarang.harga_beli)
                 data.save()
                 newBarang.jumlah_barang = newJumlah
                 newBarang.save()
@@ -59,12 +59,31 @@ def input(request):
 
 def update(request,id):
     pendapatan = Pendapatan.objects.get(id_pendapatan=id)
+    oldJumlah = pendapatan.jumlah_pembelian
     if pendapatan.id_accountant_id != request.user.id:
         messages.warning(request, 'Data pendapatan tidak ditemukan')
-        return redirect("pendapatan")    
+        return redirect("pendapatan")
+
     form = inputForm(request.POST or None, instance=pendapatan)
+    
     if form.is_valid():
-        form.save()
+        data = form.save(commit = False)
+        
+        barang_sel = Barang.objects.get(nama_barang = data.nama_barang, id_accountant = request.user.id)
+        newBarang = inputForm(request.POST or None, instance=barang_sel).save(commit=False)
+        
+        currentJumlah = data.jumlah_pembelian
+        newJumlah = barang_sel.jumlah_barang + (oldJumlah - currentJumlah)
+        
+        if (newJumlah < 0):
+            messages.warning(request, 'Jumlah barang tidak cukup')
+            return redirect("pendapatan")
+        
+        data.total_pendapatan = data.jumlah_pembelian * ( newBarang.harga_jual - newBarang.harga_beli )
+        data.save()
+        newBarang.jumlah_barang = newJumlah
+        newBarang.save()
+        
         messages.success(request, 'Data pendapatan berhasil disunting')
         return redirect("pendapatan")
     context = {
@@ -76,7 +95,13 @@ def delete(request, id):
     pendapatan = Pendapatan.objects.get(id_pendapatan = id)
     if pendapatan.id_accountant_id != request.user.id:
         messages.warning(request, 'Data pendapatan tidak ditemukan')
-        return redirect("pendapatan")    
+        return redirect("pendapatan")  
+        
+    barang_sel = Barang.objects.get(nama_barang = pendapatan.nama_barang, id_accountant = request.user.id)
+    newBarang = inputForm(request.POST or None, instance=barang_sel).save(commit=False)
+
+    newBarang.jumlah_barang = newBarang.jumlah_barang + pendapatan.jumlah_pembelian
+    newBarang.save()  
     pendapatan.delete()
     messages.success(request, 'Data pendapatan berhasil dihapus')
     return redirect("pendapatan")
