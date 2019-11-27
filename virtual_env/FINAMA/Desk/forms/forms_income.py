@@ -10,10 +10,6 @@ class inputForm (ModelForm):
         model = Pendapatan
         fields = ('nama_barang', 'nama_pembeli', 'jumlah_pembelian', 'deskripsi_pendapatan')
         labels = {'nama_barang':"Nama Barang", 'nama_pembeli':'Nama Pembeli', 'jumlah_pembelian':'Jumlah Pembelian'}
-        help_texts = {
-            'nama_pembeli'          :"Bambang Pabambang", 
-            'jumlah_pembelian'      :69420, 
-            'deskripsi_pendapatan'  : "Such a weird order he got there",}
         widgets = {
             'deskripsi_pendapatan'  : Textarea(attrs={'cols': 80, 'rows': 10}),
             'nama_barang'           : TypeaheadInput(

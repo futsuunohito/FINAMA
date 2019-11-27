@@ -4,10 +4,10 @@ from Desk.forms.forms_claim import inputForm
 from django.contrib import messages
 from Desk.models import Piutang
 
-# Data piutang
+# Piutang
 @login_required
 def claim(request):
-    piutang = Piutang.objects.all().order_by("-created_at")
+    piutang = Piutang.objects.filter(id_accountant = request.user.id).order_by("-created_at")
     context = {
         'piutang' : piutang
     }
@@ -35,6 +35,9 @@ def input(request):
 
 def update(request, id):
     piutang = Piutang.objects.get(id_piutang = id)
+    if piutang.id_accountant_id != request.user.id:
+        messages.warning(request, 'Data piutang tidak ditemukan')
+        return redirect("piutang")    
     form = inputForm(request.POST or None, instance=piutang)
     if form.is_valid():
         form.save()
@@ -46,6 +49,10 @@ def update(request, id):
     return render(request, 'piutang/update.html', context)
 
 def delete(request, id):
-    Piutang.objects.get(id_piutang = id).delete()
+    piutang = Piutang.objects.get(id_piutang = id)
+    if piutang.id_accountant_id != request.user.id:
+        messages.warning(request, 'Data piutang tidak ditemukan')
+        return redirect("piutang")    
     messages.success(request, 'Data piutang berhasil dihapus')
+    piutang.delete()
     return redirect("piutang")

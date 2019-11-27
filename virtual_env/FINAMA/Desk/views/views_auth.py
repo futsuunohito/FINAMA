@@ -23,7 +23,7 @@ def user_register(request):
 
             return user_login(request)
         else:
-            messages.error(request, "Registration Form Invalid")
+            messages.warning(request, "Registration Form Invalid")
 
     regist_form = AccountantForm()
     return render(request, 'register.html',
@@ -32,7 +32,7 @@ def user_register(request):
 
 def user_login(request):
     if request.user.is_authenticated:
-        return render(request, 'main.html')
+        return redirect("index")
         
     if request.method == "POST":
         username = request.POST.get('username')
@@ -46,9 +46,9 @@ def user_login(request):
                 messages.success(request, "Login Berhasil!")
                 return redirect('index')
             else:
-                messages.error(request, 'Authentication Error')
+                messages.warning(request, 'Authentication Error')
         else:
-            messages.error(request, "Wrong Username or Password")
+            messages.warning(request, "Wrong Username or Password")
     return render(request, 'login.html', {'form':AccountantForm()})
 
 

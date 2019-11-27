@@ -8,15 +8,15 @@ from django.db.models import Sum
 @login_required
 def index(request):
     try:
-        income = Pendapatan.objects.aggregate(Sum('total_pendapatan'))['total_pendapatan__sum']
+        income = Pendapatan.objects.filter(id_accountant = request.user.id).aggregate(Sum('total_pendapatan'))['total_pendapatan__sum']
     except:
         income = 0
     try:
-        expense = Pengeluaran.objects.aggregate(Sum('biaya'))['biaya__sum']
+        expense = Pengeluaran.objects.filter(id_accountant = request.user.id).aggregate(Sum('biaya'))['biaya__sum']
     except:
         expense = 0
     try:
-        claim = Piutang.objects.aggregate(Sum('jumlah_piutang'))['jumlah_piutang__sum']
+        claim = Piutang.objects.filter(id_accountant = request.user.id).aggregate(Sum('jumlah_piutang'))['jumlah_piutang__sum']
     except:
         claim = 0
     profit = income - expense

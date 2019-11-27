@@ -7,7 +7,8 @@ from Desk.models import Barang
 # Input Barang
 @login_required
 def warehouse(request):
-    barang = Barang.objects.all().order_by("nama_barang")
+    u_id = request.user.id
+    barang = Barang.objects.filter(id_accountant = u_id).order_by("nama_barang")
     context = {
         'barang' : barang
     }
@@ -20,7 +21,7 @@ def input(request):
         if form.is_valid():
             data = form.save(commit=False)
             data.id_accountant = request.user
-            if Barang.objects.filter(nama_barang=data.nama_barang).exists():
+            if Barang.objects.filter(nama_barang=data.nama_barang, id_accountant = request.user.id).exists():
                 messages.warning(request, "Ditemukan barang dengan nama yang sama")
                 return redirect("input_barang")
             data.save()
@@ -40,6 +41,9 @@ def input(request):
 
 def update(request, id):
     barang = Barang.objects.get(id_barang=id)
+    if barang.id_accountant_id != request.user.id:
+        messages.warning(request, 'Data barang tidak ditemukan')
+        return redirect("barang")    
     form = inputForm(request.POST or None, instance=barang)
     if form.is_valid():
         form.save()
@@ -51,6 +55,10 @@ def update(request, id):
     return render(request, 'barang/update.html', context)
 
 def delete(request, id):
-    Barang.objects.get(id_barang = id).delete()
+    barang = Barang.objects.get(id_barang = id)
+    if barang.id_accountant_id != request.user.id:
+        messages.warning(request, 'Data barang tidak ditemukan')
+        return redirect("barang")    
+    barang.delete()
     messages.success(request, 'Data barang berhasil dihapus')
     return redirect("barang")

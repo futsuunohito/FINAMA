@@ -8,16 +8,16 @@ from django.contrib import messages
 # Pendapatan
 @login_required
 def income(request):
-    pendapatan = Pendapatan.objects.all().order_by("-created_at")
+    pendapatan = Pendapatan.objects.filter(id_accountant = request.user.id).order_by("-created_at")
     context = {
         "pendapatan" : pendapatan
     } 
     return render(request, 'pendapatan/pendapatan.html', context)
 
 def input(request):
-    barang = Barang.objects.all()
+    barang = Barang.objects.filter(id_accountant = request.user.id)
     nama_barang_list = json.dumps([i.nama_barang for i in barang]) 
-
+    
     if request.method == 'POST':
         form = inputForm(request.POST)
 
@@ -25,7 +25,7 @@ def input(request):
             data = form.save(commit=False)
             data.id_accountant = request.user
             try:
-                barang_sel = Barang.objects.get(nama_barang = form.cleaned_data["nama_barang"])
+                barang_sel = Barang.objects.get(nama_barang = form.cleaned_data["nama_barang"], id_accountant = request.user.id)
             except Barang.DoesNotExist:
                 messages.warning(request, 'Barang tidak ditemukan')
                 return redirect("input_pendapatan")
@@ -59,6 +59,9 @@ def input(request):
 
 def update(request,id):
     pendapatan = Pendapatan.objects.get(id_pendapatan=id)
+    if pendapatan.id_accountant_id != request.user.id:
+        messages.warning(request, 'Data pendapatan tidak ditemukan')
+        return redirect("pendapatan")    
     form = inputForm(request.POST or None, instance=pendapatan)
     if form.is_valid():
         form.save()
@@ -70,6 +73,10 @@ def update(request,id):
     return render(request, 'pendapatan/update.html', context)
 
 def delete(request, id):
-    Pendapatan.objects.get(id_pendapatan = id).delete()
+    pendapatan = Pendapatan.objects.get(id_pendapatan = id)
+    if pendapatan.id_accountant_id != request.user.id:
+        messages.warning(request, 'Data pendapatan tidak ditemukan')
+        return redirect("pendapatan")    
+    pendapatan.delete()
     messages.success(request, 'Data pendapatan berhasil dihapus')
     return redirect("pendapatan")

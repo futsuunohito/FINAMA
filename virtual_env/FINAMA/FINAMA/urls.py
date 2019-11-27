@@ -39,13 +39,13 @@ urlpatterns = [
     path('expense/update/<id>', views_expense.update, name='update_pengeluaran'),
     path('expense/delete/<id>', views_expense.delete, name='delete_pengeluaran'),
 
-    # Input Barang
+    # Barang
     path('warehouse/', views_warehouse.warehouse, name='barang'),
     path('warehouse/input', views_warehouse.input, name='input_barang'),
     path('warehouse/update/<id>', views_warehouse.update, name='update_barang'),
     path('warehouse/delete/<id>', views_warehouse.delete, name='delete_barang'),
 
-    # Data Piutang
+    # Piutang
     path('claim/', views_claim.claim, name='piutang'),
     path('claim/input', views_claim.input, name='input_piutang'),
     path('claim/update/<id>', views_claim.update, name='update_piutang'),

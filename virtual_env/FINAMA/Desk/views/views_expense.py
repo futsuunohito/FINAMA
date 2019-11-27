@@ -37,6 +37,9 @@ def input(request):
 
 def update(request, id):
     pengeluaran = Pengeluaran.objects.get(id_pengeluaran = id)
+    if pengeluaran.id_accountant_id != request.user.id:
+        messages.warning(request, 'Data pengeluaran tidak ditemukan')
+        return redirect("pengeluaran")    
     form = inputForm(request.POST or None, instance=pengeluaran)
     if form.is_valid():
         form.save()
@@ -49,6 +52,10 @@ def update(request, id):
     return render(request, 'pengeluaran/update.html', context)
 
 def delete(request,id):
-    Pengeluaran.objects.get(id_pengeluaran = id).delete()
+    pengeluaran = Pengeluaran.objects.get(id_pengeluaran = id)
+    if pengeluaran.id_accountant_id != request.user.id:
+        messages.warning(request, 'Data pengeluaran tidak ditemukan')
+        return redirect("pengeluaran")    
     messages.success(request, 'Data pengeluaran berhasil dihapus')
+    pengeluaran.delete()
     return redirect("pengeluaran")

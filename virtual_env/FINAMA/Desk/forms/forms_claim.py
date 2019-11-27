@@ -10,10 +10,6 @@ class inputForm (ModelForm):
         fields = ('asal_piutang', 'jumlah_piutang', 'jatuh_tempo', 'deskripsi_piutang')
         labels = {'asal_piutang' : 'Asal Piutang', 'deskripsi_piutang':'Deskripsi Piutang',
                  'jumlah_piutang':'Jumlah Piutang', 'jatuh_tempo':'Jatuh Tempo'}
-        help_texts = {
-            'asal_piutang'      : 'Pt. Suka Hutang',
-            'jumlah_piutang'    : 45000, 
-        }
         widgets = {
             'deskripsi_piutang' : Textarea(attrs={'cols': 80, 'rows': 10}),
             'jatuh_tempo'       : DateInput(attrs={'type':'date'}),
