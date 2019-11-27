@@ -7,7 +7,7 @@ from Desk.models import Barang
 # Input Barang
 @login_required
 def warehouse(request):
-    barang = Barang.objects.all().order_by("-created_at")
+    barang = Barang.objects.all().order_by("nama_barang")
     context = {
         'barang' : barang
     }
