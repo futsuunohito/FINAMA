@@ -30,8 +30,8 @@
               <td>{{item.deskripsi_pendapatan}}</td>
               <td>{{item.created_at|date:"d-m-Y, H:i:s"}}</td>
               <td align="center" style="min-width:150px">
-                <a href="#" class="d-none d-sm-inline-block btn btn-success shadow-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fas fa-edit fa-sm text-white fa-fw"></i></a>
-                <a href="#" class="d-none d-sm-inline-block btn btn-danger shadow-sm" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fas fa-times fa-sm text-white fa-fw"></i></a>
+                <a href="{% url "update_pendapatan"  id=item.id_pendapatan %}" class="d-none d-sm-inline-block btn btn-success shadow-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fas fa-edit fa-sm text-white fa-fw"></i></a>
+                <a href="{% url "delete_pendapatan"  id=item.id_pendapatan %}" class="d-none d-sm-inline-block btn btn-danger shadow-sm" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fas fa-times fa-sm text-white fa-fw"></i></a>
               </td>
             </tr>
           {% endfor %}

@@ -43,12 +43,12 @@ def update(request, id):
     form = inputForm(request.POST or None, instance=barang)
     if form.is_valid():
         form.save()
-        messages.success(request, 'Data pengeluaran berhasil disunting')
-        return redirect("pengeluaran")
+        messages.success(request, 'Data barang berhasil disunting')
+        return redirect("barang")
     context = {
         'form'  : form
     }
-    return render(request, 'barang/input.html', context)
+    return render(request, 'barang/update.html', context)
 
 def delete(request, id):
     Barang.objects.get(id_barang = id).delete()

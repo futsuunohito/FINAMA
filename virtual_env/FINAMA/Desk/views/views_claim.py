@@ -23,7 +23,7 @@ def input(request):
             messages.success(request, 'Data piutang berhasil dimasukan')
         else :
             messages.warning(request, 'Data piutang gagal dimasukan')
-            return render(request, 'piutang/input.html')
+            return render(request, 'piutang/update.html')
         return redirect("piutang")
     else :
         form = inputForm()
@@ -43,7 +43,7 @@ def update(request, id):
     context = {
         'form'  : form
     }
-    return render(request, 'piutang/input.html', context)
+    return render(request, 'piutang/update.html', context)
 
 def delete(request, id):
     Piutang.objects.get(id_piutang = id).delete()

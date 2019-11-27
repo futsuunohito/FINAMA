@@ -46,7 +46,7 @@ def update(request, id):
     context ={
         'form'  : form 
     }
-    return render(request, 'pengeluaran/input.html', context)
+    return render(request, 'pengeluaran/update.html', context)
 
 def delete(request,id):
     Pengeluaran.objects.get(id_pengeluaran = id).delete()
