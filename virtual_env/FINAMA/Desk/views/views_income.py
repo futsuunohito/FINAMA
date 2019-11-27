@@ -22,7 +22,6 @@ def input(request):
         form = inputForm(request.POST)
 
         if form.is_valid():
-            print(form)
             data = form.save(commit=False)
             data.id_accountant = request.user
             try:
@@ -30,8 +29,18 @@ def input(request):
             except Barang.DoesNotExist:
                 messages.warning(request, 'Barang tidak ditemukan')
                 return redirect("input_pendapatan")
-            data.id_barang = barang_sel
-            data.save()
+    
+            newBarang = inputForm(request.POST or None, instance=barang_sel).save(commit=False)
+            newJumlah = newBarang.jumlah_barang - data.jumlah_pembelian
+            if (newJumlah < 0):
+                messages.warning(request, 'Jumlah barang tidak cukup')
+                return redirect("input_pendapatan")
+            else:
+                data.id_barang = barang_sel
+                data.save()
+                newBarang.jumlah_barang = newJumlah
+                newBarang.save()
+
             messages.success(request, 'Data pendapatan berhasil dimasukan')
         else :
             messages.warning(request, 'Data pendapatan gagal dimasukan')
