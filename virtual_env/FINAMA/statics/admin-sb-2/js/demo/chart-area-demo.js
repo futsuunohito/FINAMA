@@ -95,6 +95,10 @@ areaChartOptions = {
   }
 }
 
+income = [58000, 56000, 68000, 84000, 59000, 52000, 76000, 82000, 92000, 63000, 57000, 90000]
+expense = [47000, 37000, 42000, 48000, 28000, 35000, 28000, 27000, 29000, 31000, 39000, 39000]
+profit = [11000, 19000, 26000, 36000, 31000, 17000, 48000, 55000, 63000, 32000, 18000, 51000]
+
 // Area Chart Example
 var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
@@ -114,7 +118,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(28, 200, 138, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
+      data: [58000, 56000, 68000, 84000, 59000, 52000, 76000, 82000, 92000, 63000, 57000, 90000],
     }],
   },
   options: areaChartOptions
@@ -138,7 +142,7 @@ var myLineChart = new Chart(ctx2, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 25000, 20000, 30000, 40000],
+      data: [11000, 19000, 26000, 36000, 31000, 17000, 48000, 55000, 63000, 32000, 18000, 51000],
     }],
   },
   options: areaChartOptions
@@ -162,7 +166,7 @@ var myLineChart = new Chart(ctx3, {
       pointHoverBorderColor: "rgba(231, 74, 59, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [ 100000, 10000, 5000, 15000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
+      data: [47000, 37000, 42000, 48000, 28000, 35000, 28000, 27000, 29000, 31000, 39000, 39000],
     }],
   },
   options: areaChartOptions

@@ -8,9 +8,6 @@ class inputForm (ModelForm):
         model = Pengeluaran
         fields = ('biaya', 'deskripsi_pengeluaran', )
         labels = {'deskripsi_pengeluaran':"Deskripsi Pengeluaran",}
-        help_texts = {
-            'biaya' : 45000
-        }
         widgets = {
             'deskripsi_pengeluaran'  : Textarea(attrs={'cols': 80, 'rows': 10}),
         }

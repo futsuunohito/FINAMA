@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from Desk.forms.forms_auth import AccountantForm
 from Desk.views.views_dashboard import index
+from django.contrib import messages
 
 from django.contrib import messages 
 from django.contrib.auth import authenticate, login, logout
@@ -42,7 +43,8 @@ def user_login(request):
         if accountant:
             if accountant.is_active:
                 login(request, accountant)
-                return HttpResponseRedirect(reverse('index'))
+                messages.success(request, "Login Berhasil!")
+                return redirect('index')
             else:
                 messages.error(request, 'Authentication Error')
         else:
