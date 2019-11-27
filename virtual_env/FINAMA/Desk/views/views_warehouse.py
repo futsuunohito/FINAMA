@@ -17,11 +17,12 @@ def input(request):
     if request.method == 'POST':
         form = inputForm(request.POST)
         
-        
         if form.is_valid():
             data = form.save(commit=False)
             data.id_accountant = request.user
-            # print("Your form has successfull submitted by ", form.id_accountant)
+            if Barang.objects.filter(nama_barang=data.nama_barang).exists():
+                messages.warning(request, "Ditemukan barang dengan nama yang sama")
+                return redirect("input_barang")
             data.save()
             warehouse(request)
             messages.success(request, 'Data barang berhasil dimasukan')

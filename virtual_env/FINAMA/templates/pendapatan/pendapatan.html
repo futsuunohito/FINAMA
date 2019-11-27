@@ -14,25 +14,27 @@
       <hr>
       <table id="tabel_pendapatan" class="table table-bordered">
           <thead>
-            <th>Nama Barang</th>
-            <th>Nama Pembeli</th>
+            <th>Barang</th>
+            <th>Pembeli</th>
             <th>Jumlah</th>
             <th>Deskripsi</th>
             <th>Tanggal</th>
             <th>Action</th>
           </thead>
           <tbody>
+          {% for item in pendapatan %}
             <tr>
-              <td>Sirup</td>
-              <td>Orang</td>
-              <td>1</td>
-              <td>-</td>
-              <td>12 November 2019</td>
+              <td>{{item.nama_barang}}</td>
+              <td>{{item.nama_pembeli}}</td>
+              <td>{{item.jumlah_pembelian}}</td>
+              <td>{{item.deskripsi_pendapatan}}</td>
+              <td>{{item.created_at|date:"d-m-Y, H:i:s"}}</td>
               <td align="center" style="min-width:150px">
                 <a href="#" class="d-none d-sm-inline-block btn btn-success shadow-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fas fa-edit fa-sm text-white fa-fw"></i></a>
                 <a href="#" class="d-none d-sm-inline-block btn btn-danger shadow-sm" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fas fa-times fa-sm text-white fa-fw"></i></a>
               </td>
             </tr>
+          {% endfor %}
           </tbody>
         </table>
     </div>
