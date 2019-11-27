@@ -80,13 +80,25 @@ WSGI_APPLICATION = 'FINAMA.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
+    # remotemysql
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'Tfd20yvt33',
+    #     'USER': 'Tfd20yvt33',
+    #     'PASSWORD': 'EM1eEORhMA',
+    #     'HOST': 'remotemysql.com',
+    #     'PORT': '3306'
+    # }
+    
+    # MongoDB Atlas
+    # pip install djongo
+    # pip install pymongo[srv]
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Tfd20yvt33',
-        'USER': 'Tfd20yvt33',
-    'PASSWORD': 'EM1eEORhMA',
-        'HOST': 'remotemysql.com',
-        'PORT': '3306'
+        'ENGINE': 'djongo',
+        'NAME': 'FINAMA',
+        'USER': 'futsuunohito',
+        'PASSWORD': 'mpplkua',
+        'HOST': 'mongodb+srv://futsuunohito:mpplkua@finama-ofopf.mongodb.net/test?retryWrites=true&w=majority',
     }
 }
 

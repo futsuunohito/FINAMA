@@ -62,6 +62,7 @@ class Pendapatan(models.Model):
     nama_barang = models.CharField(max_length=20)
     nama_pembeli = models.CharField(max_length=30)
     jumlah_pembelian = models.IntegerField()
+    total_pendapatan = models.IntegerField(null=True, blank=True)
     deskripsi_pendapatan = models.CharField(max_length=500)
 
     created_at = models.DateTimeField(auto_now=True)

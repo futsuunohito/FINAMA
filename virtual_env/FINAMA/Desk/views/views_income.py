@@ -37,6 +37,7 @@ def input(request):
                 return redirect("input_pendapatan")
             else:
                 data.id_barang = barang_sel
+                data.total_pendapatan = data.jumlah_pembelian * newBarang.harga_jual
                 data.save()
                 newBarang.jumlah_barang = newJumlah
                 newBarang.save()

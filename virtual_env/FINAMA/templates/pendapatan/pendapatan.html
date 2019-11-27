@@ -17,6 +17,7 @@
             <th>Barang</th>
             <th>Pembeli</th>
             <th>Jumlah</th>
+            <th>Total</th>
             <th>Deskripsi</th>
             <th>Tanggal</th>
             <th>Action</th>
@@ -27,6 +28,12 @@
               <td>{{item.nama_barang}}</td>
               <td>{{item.nama_pembeli}}</td>
               <td>{{item.jumlah_pembelian}}</td>
+              <td>
+                {% load humanize %} {% load i18n %} {% load l10n %}
+                {% language 'de' %}
+                Rp{{ item.total_pendapatan|intcomma }}
+                {% endlanguage %}
+              </td>
               <td>{{item.deskripsi_pendapatan}}</td>
               <td>{{item.created_at|date:"d-m-Y, H:i:s"}}</td>
               <td align="center" style="min-width:150px">
